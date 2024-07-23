@@ -90,6 +90,12 @@
     background: rgba(249, 246, 246, 1);
 }
 
+.testimonial-card{
+    background: var(--Sapphire-50, rgba(241, 246, 253, 1));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-top: 1px solid var(--Border-Default-Default, rgba(217, 217, 217, 1))
+}
+
 .stop-writing-code {
     background: url(/assets/img/stop-writing-code.png);
     background-repeat: no-repeat;
