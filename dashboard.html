@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.css"
+    />
+
+    <!-- Stylesheet -->
+    <link href="dashasset/css/style.css" rel="stylesheet" />
+    <style>
+      #chart {
+        max-width: 380px;
+        margin: 35px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Sidebar Start -->
+      <div class="sidebar pb-3">
+        <nav class="navbar navbar-light">
+          <!-- <a href="index.html" class="navbar-brand mx-4 mb-3">
+            <h3 class="text-primary">
+              <i class="fa fa-hashtag me-2"></i>DASHMIN
+            </h3>
+          </a> -->
+          <div class="d-flex align-items-center ms-4 mb-4">
+            <div class="position-relative">
+              <img
+                class="rounded-circle"
+                src="dashasset/img/user.png"
+                alt=""
+                style="width: 40px; height: 40px"
+              />
+            </div>
+            <div class="ms-3 text-white">
+              <h6 class="mb-0 subheading">Thomas Anree</h6>
+              <span class="subdescription">Ux Designer</span>
+            </div>
+          </div>
+          <div class="navbar-nav w-100">
+            <a href="dashboard.html" class="nav-item nav-link active"
+              ><img
+                src="dashasset/img/darhboard.svg"
+                alt=""
+                class="me-2"
+              /><span>Dashboard</span></a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><img
+                  src="dashasset/img/darhboard.svg"
+                  alt=""
+                  class="me-2"
+                />Website</a
+              >
+              <div
+                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
+              >
+                <a href="#" class="dropdown-item">Design</a>
+                <a href="#" class="dropdown-item">Pages</a>
+                <a href="#" class="dropdown-item">Post</a>
+                <a href="#" class="dropdown-item">Category</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><img
+                  src="dashasset/img/darhboard.svg"
+                  alt=""
+                  class="me-2"
+                />Shop</a
+              >
+              <div
+                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
+              >
+                <a href="#" class="dropdown-item">Design</a>
+                <a href="#" class="dropdown-item">Pages</a>
+                <a href="#" class="dropdown-item">Post</a>
+                <a href="#" class="dropdown-item">Category</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><img
+                  src="dashasset/img/darhboard.svg"
+                  alt=""
+                  class="me-2"
+                />Modules</a
+              >
+              <div
+                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
+              >
+                <a href="#" class="dropdown-item">Design</a>
+                <a href="#" class="dropdown-item">Pages</a>
+                <a href="#" class="dropdown-item">Post</a>
+                <a href="#" class="dropdown-item">Category</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><img
+                  src="dashasset/img/darhboard.svg"
+                  alt=""
+                  class="me-2"
+                />Settings</a
+              >
+              <div
+                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
+              >
+                <a href="#" class="dropdown-item">Design</a>
+                <a href="#" class="dropdown-item">Pages</a>
+                <a href="#" class="dropdown-item">Post</a>
+                <a href="#" class="dropdown-item">Category</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><img
+                  src="dashasset/img/darhboard.svg"
+                  alt=""
+                  class="me-2"
+                />Users</a
+              >
+              <div
+                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
+              >
+                <a href="#" class="dropdown-item">Design</a>
+                <a href="#" class="dropdown-item">Pages</a>
+                <a href="#" class="dropdown-item">Post</a>
+                <a href="#" class="dropdown-item">Category</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><img
+                  src="dashasset/img/darhboard.svg"
+                  alt=""
+                  class="me-2"
+                />Get Help</a
+              >
+              <div
+                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
+              >
+                <a href="#" class="dropdown-item">Design</a>
+                <a href="#" class="dropdown-item">Pages</a>
+                <a href="#" class="dropdown-item">Post</a>
+                <a href="#" class="dropdown-item">Category</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                ><img
+                  src="dashasset/img/darhboard.svg"
+                  alt=""
+                  class="me-2"
+                />Logout</a
+              >
+              <div
+                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
+              >
+                <a href="#" class="dropdown-item">Design</a>
+                <a href="#" class="dropdown-item">Pages</a>
+                <a href="#" class="dropdown-item">Post</a>
+                <a href="#" class="dropdown-item">Category</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Sidebar End -->
+
+      <!-- Content Start -->
+      <div class="content pb-5">
+        <!-- Navbar Start -->
+        <nav
+          class="navbar navbar-expand bg-white navbar-light sticky-top px-4 py-3"
+        >
+          <!-- <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+            <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+          </a> -->
+          <a
+            href="#"
+            class="sidebar-toggler bg-transparent flex-shrink-0 text-decoration-none me-3"
+          >
+            <i class="fa fa-bars text-dark"></i>
+          </a>
+          <h3 class="heading m-0">Welcome Back, Admin</h3>
+          <div class="d-flex align-items-center gap-1 ms-4 subheading fs-5">
+            <i class="fa-solid fa-plus"></i>
+            <span>Add</span>
+          </div>
+          <div class="d-flex align-items-center gap-1 ms-4 subheading fs-5">
+            <i class="bi bi-gear"></i>
+            <span>Edit</span>
+          </div>
+          <div class="navbar-nav align-items-center ms-auto">
+            <div class="input-search position-relative">
+              <input
+                type="text"
+                placeholder="Search Content..."
+                class="form-control rounded-3 subdescription fw-bold"
+              />
+              <span class="fa fa-search search-icon text-secondary"></span>
+            </div>
+            <div>
+              <label for="theme" class="theme">
+                <span class="theme__toggle-wrap">
+                  <input
+                    id="theme"
+                    class="theme__toggle"
+                    type="checkbox"
+                    role="switch"
+                    name="theme"
+                    value="dark"
+                  />
+                  <span class="theme__fill"></span>
+                  <span class="theme__icon">
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Sale & Revenue Start -->
+        <div class="container-fluid pt-4 px-4">
+          <div class="row">
+            <div class="col-sm-6 col-xl-3">
+              <div class="card border-0 rounded-3">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="dashasset/img/email.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="ms-2">
+                      <p class="mb-2 subdescription">Today Sale</p>
+                      <h6 class="mb-0 heading">$1234</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card border-0 rounded-3">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="dashasset/img/comments.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="ms-2">
+                      <p class="mb-2 subdescription">Last Comments</p>
+                      <h6 class="mb-0 heading">$3,326</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card border-0 rounded-3">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="dashasset/img/sales.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="ms-2">
+                      <p class="mb-2 subdescription">Sales</p>
+                      <h6 class="mb-0 heading">5,325</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card border-0 rounded-3">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="dashasset/img/recent-orders.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="ms-2">
+                      <p class="mb-2 subdescription">Recent Orders</p>
+                      <h6 class="mb-0 heading">1,326</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sale & Revenue End -->
+
+        <!-- Sales Chart Start -->
+        <div class="container-fluid pt-4 px-4">
+          <div class="card border-0 rounded-3">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex gap-3 align-items-center">
+                  <div>
+                    <img src="dashasset/img/statistics.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5 class="heading m-0 fs-5">Statistics</h5>
+                    <h6 class="heading fs-6 m-0">
+                      0 <span class="fw-normal">Online</span>
+                    </h6>
+                  </div>
+                </div>
+                <div>
+                  <div class="form-group">
+                    <select
+                      class="form-control form-select subheading fw-bold"
+                      aria-label="Default select example"
+                      id="exampleFormControlSelect1"
+                    >
+                      <option>Monthly</option>
+                      <option>Yearly</option>
+                      <option>Weekly</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div id="chart"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Sales Chart End -->
+      </div>
+      <!-- Content End -->
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="dashasset/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+    <script>
+      var options = {
+        series: [44, 55, 13, 33],
+        chart: {
+          width: 400,
+          type: "donut",
+          events: {
+            dataPointSelection: function (event, chartContext, config) {
+              // This function is triggered when a data point is selected
+              chartContext.updateOptions({
+                plotOptions: {
+                  donut: {
+                    expandOnClick: true, // Enable expand on click
+                  },
+                },
+              });
+            },
+          },
+        },
+        plotOptions: {
+          donut: {
+            size: "60%",
+            labels: {
+              show: false,
+            },
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              chart: {
+                width: 200,
+              },
+              legend: {
+                show: false,
+              },
+            },
+          },
+        ],
+        legend: {
+          position: "right",
+          offsetY: 0,
+          height: 230,
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script>
+  </body>
+</html>
