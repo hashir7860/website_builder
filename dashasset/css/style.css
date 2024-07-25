@@ -184,8 +184,20 @@
     background: rgba(224, 248, 241, 1);
 }
 
+.show-filter-btn:hover {
+    background: rgba(224, 248, 241, 1);
+}
+
 .module-card {
     background: rgba(224, 248, 241, 1);
+}
+
+.website-setting:hover {
+    background: rgba(238, 255, 250, 1);
+}
+
+.pages-section {
+    background: rgba(245, 245, 245, 1);
 }
 
 .marketplace-card {
@@ -209,7 +221,7 @@
     color: rgba(16, 185, 129, 1) !important;
 }
 
-.card-shadow{
+.card-shadow {
     box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
 }
 
