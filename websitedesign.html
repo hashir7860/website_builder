@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>Website Design</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -23,19 +23,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.css"
-    />
 
     <!-- Stylesheet -->
     <link href="dashasset/css/style.css" rel="stylesheet" />
-    <style>
-      #chart {
-        max-width: 380px;
-        margin: 35px auto;
-      }
-    </style>
   </head>
 
   <body>
@@ -239,13 +229,14 @@
           <!-- <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
             <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
           </a> -->
+
           <a
             href="#"
             class="sidebar-toggler bg-transparent flex-shrink-0 text-decoration-none me-3"
           >
             <i class="fa fa-bars text-dark"></i>
           </a>
-          <h3 class="heading m-0">Welcome Back, Admin</h3>
+          <h3 class="heading m-0 d-none d-md-block">Welcome Back, Admin</h3>
           <div class="d-flex align-items-center gap-1 ms-4 subheading fs-5">
             <i class="fa-solid fa-plus"></i>
             <span>Add</span>
@@ -255,14 +246,6 @@
             <span>Edit</span>
           </div>
           <div class="navbar-nav align-items-center ms-auto">
-            <div class="input-search position-relative">
-              <input
-                type="text"
-                placeholder="Search Content..."
-                class="form-control rounded-3 subdescription fw-bold"
-              />
-              <span class="fa fa-search search-icon text-secondary"></span>
-            </div>
             <div>
               <label for="theme" class="theme">
                 <span class="theme__toggle-wrap">
@@ -295,111 +278,145 @@
 
         <!-- Sale & Revenue Start -->
         <div class="container-fluid pt-4 px-4">
-          <div class="row">
-            <div class="col-sm-6 col-xl-3">
-              <div class="card border-0 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="dashasset/img/email.svg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                    <div class="ms-2">
-                      <p class="mb-2 subdescription">Today Sale</p>
-                      <h6 class="mb-0 heading">$1234</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-              <div class="card border-0 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="dashasset/img/comments.svg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                    <div class="ms-2">
-                      <p class="mb-2 subdescription">Last Comments</p>
-                      <h6 class="mb-0 heading">$3,326</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-              <div class="card border-0 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="dashasset/img/sales.svg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                    <div class="ms-2">
-                      <p class="mb-2 subdescription">Sales</p>
-                      <h6 class="mb-0 heading">5,325</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-              <div class="card border-0 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="dashasset/img/recent-orders.svg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                    <div class="ms-2">
-                      <p class="mb-2 subdescription">Recent Orders</p>
-                      <h6 class="mb-0 heading">1,326</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h5 class="heading m-0">Design</h5>
+            <p class="subheading">Last 30 days</p>
           </div>
         </div>
         <!-- Sale & Revenue End -->
 
         <!-- Sales Chart Start -->
-        <div class="container-fluid pt-4 px-4">
+        <div class="container-fluid pt-3 px-4">
           <div class="card border-0 rounded-3">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex gap-3 align-items-center">
-                  <div>
-                    <img src="dashasset/img/statistics.svg" alt="" />
-                  </div>
-                  <div>
-                    <h5 class="heading m-0 fs-5">Statistics</h5>
-                    <h6 class="heading fs-6 m-0">
-                      0 <span class="fw-normal">Online</span>
-                    </h6>
-                  </div>
-                </div>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
                 <div>
-                  <div class="form-group">
-                    <select
-                      class="form-control form-select subheading fw-bold bg-light"
-                      aria-label="Default select example"
-                      id="exampleFormControlSelect1"
+                  <h5 class="heading m-0">Big Template</h5>
+                  <p class="subheading fs-5">Version 1.20</p>
+                </div>
+                <div class="d-flex gap-3">
+                  <a
+                    href="#"
+                    class="subheading text-decoration-none text-dark d-flex align-items-center fw-bold fs-6"
+                  >
+                    <img src="dashasset/img/site-detail.svg" alt="" /><span
+                      >Site Detail</span
                     >
-                      <option>Monthly</option>
-                      <option>Yearly</option>
-                      <option>Weekly</option>
-                    </select>
-                  </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="subheading text-decoration-none text-dark fw-bold fs-6"
+                  >
+                    <img
+                      src="dashasset/img/template-store.svg"
+                      alt=""
+                      class="img-fuid"
+                    />
+                    <span>Template Store</span>
+                  </a>
                 </div>
               </div>
-
-              <div id="chart"></div>
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="" class="heading">Website Page</label>
+                  <select
+                    class="form-control form-select subheading fw-bold bg-light"
+                    aria-label="Default select example"
+                    id="exampleFormControlSelect1"
+                  >
+                    <option>Monthly</option>
+                    <option>Yearly</option>
+                    <option>Weekly</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end mt-3">
+                <button
+                  class="btn show-filter-btn fw-bold border border-dark rounded-2 me-2 d-flex align-items-center gap-2 fs-6"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                  <span>New Page</span>
+                </button>
+                <button
+                  class="btn show-filter-btn fw-bold border border-dark rounded-2 me-2 d-flex align-items-center gap-2 fs-6"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Customize</span>
+                </button>
+                <button
+                  class="btn show-filter-btn fw-bold border border-dark rounded-2 me-2 d-flex gap-2 align-items-center fs-6"
+                >
+                  <i class="bi bi-eye"></i>
+                  <span>Preview</span>
+                </button>
+              </div>
+              <div class="card mt-4">
+                <div class="card-header border-0 bg-transparent">
+                  <header class="home-header">
+                    <nav
+                      class="container-fluid navbar design-navbar bg-white navbar-expand-lg py-2"
+                    >
+                      <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                          <img
+                            src="dashasset/img/logo.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </a>
+                        <button
+                          class="navbar-toggler bg-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                          class="collapse navbar-collapse"
+                          id="navbarSupportedContent"
+                        >
+                          <div
+                            class="navbar-nav ms-auto d-flex gap-3 align-items-center right-dropdown-profile"
+                          >
+                            <ul class="navbar-nav design-nav mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#"
+                                  >Solutions</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Community</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                              </li>
+                            </ul>
+                            <a class="btn signin-btn" href="#">Sign in</a>
+                            <a class="btn bg-dark text-white" href="#">Register</a>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </header>
+                </div>
+                <div class="card-body pages-section text-center py-5">
+                  <div class="py-5">
+                    <h2 class="main-heading">Title</h2>
+                    <h2 class="heading fw-normal">Subtitle</h2>
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-0">
+                  <img src="dashasset/img/website-design.png" alt="" class="img-fluid w-100">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -417,59 +434,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Template Javascript -->
     <script src="dashasset/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
-    <script>
-      var options = {
-        series: [44, 55, 13, 33],
-        chart: {
-          width: 400,
-          type: "donut",
-          events: {
-            dataPointSelection: function (event, chartContext, config) {
-              // This function is triggered when a data point is selected
-              chartContext.updateOptions({
-                plotOptions: {
-                  donut: {
-                    expandOnClick: true, // Enable expand on click
-                  },
-                },
-              });
-            },
-          },
-        },
-        plotOptions: {
-          donut: {
-            size: "60%",
-            labels: {
-              show: false,
-            },
-          },
-        },
-        dataLabels: {
-          enabled: false,
-        },
-        responsive: [
-          {
-            breakpoint: 480,
-            options: {
-              chart: {
-                width: 200,
-              },
-              legend: {
-                show: false,
-              },
-            },
-          },
-        ],
-        legend: {
-          position: "right",
-          offsetY: 0,
-          height: 230,
-        },
-      };
-
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
-      chart.render();
-    </script>
   </body>
 </html>

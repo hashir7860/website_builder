@@ -82,6 +82,25 @@
     border-radius: 0;
 }
 
+.sidebar .navbar .navbar-nav .nav-link {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400;
+    color: rgba(139, 144, 154, 1);
+    border: none;
+    margin: 5px 14px;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.sidebar .navbar .navbar-nav .nav-link:hover,
+.sidebar .navbar .navbar-nav .nav-link.active {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 600;
+    color: black;
+    border: none;
+    background: rgba(243, 244, 248, 1);
+}
+
 /* .sidebar .navbar .navbar-nav .nav-link:hover,
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
@@ -184,6 +203,11 @@
     background: rgba(224, 248, 241, 1);
 }
 
+.signin-btn {
+    background: rgba(227, 227, 227, 1);
+    border: 1px solid var(--Border-Neutral-Secondary, rgba(118, 118, 118, 1));
+}
+
 .show-filter-btn:hover {
     background: rgba(224, 248, 241, 1);
 }
@@ -198,6 +222,14 @@
 
 .pages-section {
     background: rgba(245, 245, 245, 1);
+}
+
+.pagination .page-link{
+    background: rgba(241, 242, 246, 1);
+}
+
+.pagination .page-link.active{
+    background: rgba(15, 96, 255, 1);
 }
 
 .marketplace-card {
@@ -250,15 +282,43 @@
     color: rgba(255, 0, 0, 1);
 }
 
+.bg-yellow{
+    background: rgba(255, 198, 0, 0.16);
+    color: rgba(255, 198, 0, 1);
+}
+
+.bg-yellow:hover{
+    background: rgba(255, 198, 0, 0.16);
+    color: rgba(255, 198, 0, 1);
+}
+
+.main-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
 .heading {
     font-family: "Poppins", sans-serif;
     font-size: 22px;
     font-weight: 600;
 }
 
+.customer-heading {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
 .subheading {
-    font-family: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
+    font-weight: 400;
+}
+
+.customer-subheading {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -268,12 +328,23 @@
     font-weight: 400;
 }
 
+.submenu {
+    font-family: "Inter", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: rgba(139, 144, 154, 1) !important;
+}
+
 .input-search .search-icon {
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
     font-size: 18px;
+}
+
+.search-icon-2 {
+    left: 10px !important;
 }
 
 
@@ -488,6 +559,17 @@
 }
 
 /* End Switch */
+
+.design-nav li {
+    margin: 0 15px;
+}
+
+.design-nav .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: black !important;
+}
 
 @media(max-width: 768px) {
     .input-search input {

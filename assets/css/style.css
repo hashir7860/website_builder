@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background: rgba(248, 248, 248, 1);
 }
 
@@ -9,7 +9,7 @@
 .navbar-nav .nav-link {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    font-weight: 400;    
+    font-weight: 400;
     color: black !important;
 }
 
@@ -18,10 +18,14 @@
     padding: 15px;
 }
 
-    /* .navbar-scrolled .navbar-nav .nav-link,
+/* .navbar-scrolled .navbar-nav .nav-link,
     .navbar-scrolled {
         color: rgba(152, 161, 227, 1);
-    } */
+} */
+
+.input-bg{
+    background: rgba(244, 244, 244, 1);
+}
 
 #hero {
     /* padding-top: 130px; */
@@ -90,7 +94,7 @@
     background: rgba(249, 246, 246, 1);
 }
 
-.testimonial-card{
+.testimonial-card {
     background: var(--Sapphire-50, rgba(241, 246, 253, 1));
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-top: 1px solid var(--Border-Default-Default, rgba(217, 217, 217, 1))

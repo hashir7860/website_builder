@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>Customer Dashboard</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -30,12 +30,6 @@
 
     <!-- Stylesheet -->
     <link href="dashasset/css/style.css" rel="stylesheet" />
-    <style>
-      #chart {
-        max-width: 380px;
-        margin: 35px auto;
-      }
-    </style>
   </head>
 
   <body>
@@ -56,175 +50,67 @@
       <!-- Spinner End -->
 
       <!-- Sidebar Start -->
-      <div class="sidebar pb-3">
+      <div class="sidebar customer-sidebar pb-3 bg-white">
         <nav class="navbar navbar-light">
-          <!-- <a href="index.html" class="navbar-brand mx-4 mb-3">
-            <h3 class="text-primary">
-              <i class="fa fa-hashtag me-2"></i>DASHMIN
-            </h3>
-          </a> -->
-          <div class="d-flex align-items-center ms-4 mb-4">
-            <div class="position-relative">
-              <img
-                class="rounded-circle"
-                src="dashasset/img/user.png"
-                alt=""
-                style="width: 40px; height: 40px"
-              />
-            </div>
-            <div class="ms-3 text-white">
-              <h6 class="mb-0 subheading">Thomas Anree</h6>
-              <span class="subdescription">Ux Designer</span>
-            </div>
+          <div class="mb-4 p-3">
+            <img
+              src="dashasset/img/customer-logo.png"
+              alt=""
+              class="img-fluid"
+            />
           </div>
           <div class="navbar-nav w-100">
-            <a href="dashboard.html" class="nav-item nav-link active"
+            <p class="submenu nav-item nav-link pt-0 mb-0">Main menu</p>
+            <a href="dashboard.html" class="nav-item nav-link active text-dark"
               ><img
-                src="dashasset/img/darhboard.svg"
+                src="dashasset/img/customer-dashboard.svg"
                 alt=""
                 class="me-2"
               /><span>Dashboard</span></a
             >
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                ><img
-                  src="dashasset/img/darhboard.svg"
-                  alt=""
-                  class="me-2"
-                />Website</a
-              >
-              <div
-                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
-              >
-                <a href="#" class="dropdown-item">Design</a>
-                <a href="#" class="dropdown-item">Pages</a>
-                <a href="#" class="dropdown-item">Post</a>
-                <a href="#" class="dropdown-item">Category</a>
-              </div>
-            </div>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                ><img
-                  src="dashasset/img/darhboard.svg"
-                  alt=""
-                  class="me-2"
-                />Shop</a
-              >
-              <div
-                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
-              >
-                <a href="#" class="dropdown-item">Design</a>
-                <a href="#" class="dropdown-item">Pages</a>
-                <a href="#" class="dropdown-item">Post</a>
-                <a href="#" class="dropdown-item">Category</a>
-              </div>
-            </div>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                ><img
-                  src="dashasset/img/darhboard.svg"
-                  alt=""
-                  class="me-2"
-                />Modules</a
-              >
-              <div
-                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
-              >
-                <a href="#" class="dropdown-item">Design</a>
-                <a href="#" class="dropdown-item">Pages</a>
-                <a href="#" class="dropdown-item">Post</a>
-                <a href="#" class="dropdown-item">Category</a>
-              </div>
-            </div>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                ><img
-                  src="dashasset/img/darhboard.svg"
-                  alt=""
-                  class="me-2"
-                />Settings</a
-              >
-              <div
-                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
-              >
-                <a href="#" class="dropdown-item">Design</a>
-                <a href="#" class="dropdown-item">Pages</a>
-                <a href="#" class="dropdown-item">Post</a>
-                <a href="#" class="dropdown-item">Category</a>
-              </div>
-            </div>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                ><img
-                  src="dashasset/img/darhboard.svg"
-                  alt=""
-                  class="me-2"
-                />Users</a
-              >
-              <div
-                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
-              >
-                <a href="#" class="dropdown-item">Design</a>
-                <a href="#" class="dropdown-item">Pages</a>
-                <a href="#" class="dropdown-item">Post</a>
-                <a href="#" class="dropdown-item">Category</a>
-              </div>
-            </div>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                ><img
-                  src="dashasset/img/darhboard.svg"
-                  alt=""
-                  class="me-2"
-                />Get Help</a
-              >
-              <div
-                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
-              >
-                <a href="#" class="dropdown-item">Design</a>
-                <a href="#" class="dropdown-item">Pages</a>
-                <a href="#" class="dropdown-item">Post</a>
-                <a href="#" class="dropdown-item">Category</a>
-              </div>
-            </div>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                ><img
-                  src="dashasset/img/darhboard.svg"
-                  alt=""
-                  class="me-2"
-                />Logout</a
-              >
-              <div
-                class="dropdown-menu bg-transparent border-0 text-white mt-0 pt-0"
-              >
-                <a href="#" class="dropdown-item">Design</a>
-                <a href="#" class="dropdown-item">Pages</a>
-                <a href="#" class="dropdown-item">Post</a>
-                <a href="#" class="dropdown-item">Category</a>
-              </div>
-            </div>
+            <a href="#" class="nav-item nav-link d-flex text-dark"
+              ><img
+                src="dashasset/img/customer-order.svg"
+                alt=""
+                class="me-2"
+              /><span>Order Management</span></a
+            >
+            <a href="#" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-sites.svg"
+                alt=""
+                class="me-2"
+              /><span>My Sites</span></a
+            >
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-appointment.svg"
+                alt=""
+                class="me-2"
+              /><span>Shedule Appointments</span></a
+            >
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-domain.svg"
+                alt=""
+                class="me-2"
+              /><span>Domain</span></a
+            >
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-transaction.svg"
+                alt=""
+                class="me-2"
+              /><span>Transaction</span></a
+            >
+            <p class="submenu nav-item nav-link py-0 mb-0">Products</p>
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-productlist.svg"
+                alt=""
+                class="me-2"
+              /><span>Product List</span></a
+            >
           </div>
         </nav>
       </div>
@@ -234,7 +120,7 @@
       <div class="content pb-5">
         <!-- Navbar Start -->
         <nav
-          class="navbar navbar-expand bg-white navbar-light sticky-top px-4 py-3"
+          class="navbar navbar-expand bg-white navbar-light bg-transparent px-4 py-3"
         >
           <!-- <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
             <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
@@ -245,6 +131,7 @@
           >
             <i class="fa fa-bars text-dark"></i>
           </a>
+          <h5 class="customer-subheading m-0">Total Revenue</h5>
           <h3 class="heading m-0">Welcome Back, Admin</h3>
           <div class="d-flex align-items-center gap-1 ms-4 subheading fs-5">
             <i class="fa-solid fa-plus"></i>
