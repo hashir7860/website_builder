@@ -233,9 +233,7 @@
       <!-- Content Start -->
       <div class="content pb-5">
         <!-- Navbar Start -->
-        <nav
-          class="navbar navbar-expand bg-white navbar-light sticky-top px-4 py-3"
-        >
+        <nav class="navbar navbar-expand bg-white navbar-light sticky-top px-4 py-3 ">
           <!-- <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
             <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
           </a> -->
@@ -245,7 +243,7 @@
           >
             <i class="fa fa-bars text-dark"></i>
           </a>
-          <h3 class="heading m-0">Welcome Back, Admin</h3>
+          <h3 class="heading m-0 d-none d-md-block">Welcome Back, Admin</h3>
           <div class="d-flex align-items-center gap-1 ms-4 subheading fs-5">
             <i class="fa-solid fa-plus"></i>
             <span>Add</span>
@@ -255,7 +253,7 @@
             <span>Edit</span>
           </div>
           <div class="navbar-nav align-items-center ms-auto">
-            <div class="input-search position-relative">
+            <div class="input-search position-relative d-none d-md-block">
               <input
                 type="text"
                 placeholder="Search Content..."
@@ -296,7 +294,7 @@
         <!-- Sale & Revenue Start -->
         <div class="container-fluid pt-4 px-4">
           <div class="row">
-            <div class="col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-xl-3 mt-3">
               <div class="card border-0 rounded-3">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
@@ -313,7 +311,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-xl-3 mt-3">
               <div class="card border-0 rounded-3">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
@@ -330,7 +328,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-xl-3 mt-3">
               <div class="card border-0 rounded-3">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
@@ -347,7 +345,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-xl-3 mt-3">
               <div class="card border-0 rounded-3">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
@@ -418,7 +416,7 @@
     <!-- Template Javascript -->
     <script src="dashasset/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
-    <script>
+    <!-- <script>
       var options = {
         series: [44, 55, 13, 33],
         chart: {
@@ -469,6 +467,81 @@
       };
 
       var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script> -->
+
+    <script>
+      var options = {
+        series: [44, 55, 13, 33],
+        chart: {
+          type: 'donut',
+          events: {
+            dataPointSelection: function (event, chartContext, config) {
+              // This function is triggered when a data point is selected
+              chartContext.updateOptions({
+                plotOptions: {
+                  donut: {
+                    expandOnClick: true, // Enable expand on click
+                  },
+                },
+              });
+            },
+          },
+        },
+        plotOptions: {
+          donut: {
+            size: '60%',
+            labels: {
+              show: false,
+            },
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        responsive: [
+          {
+            breakpoint: 1024,
+            options: {
+              chart: {
+                width: '100%',
+              },
+              legend: {
+                position: 'bottom',
+              },
+            },
+          },
+          {
+            breakpoint: 768,
+            options: {
+              chart: {
+                width: '100%',
+              },
+              legend: {
+                position: 'bottom',
+              },
+            },
+          },
+          {
+            breakpoint: 480,
+            options: {
+              chart: {
+                width: '100%',
+              },
+              legend: {
+                position: 'bottom',
+              },
+            },
+          },
+        ],
+        legend: {
+          position: 'bottom',
+          offsetY: 0,
+          // height: 230,
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector('#chart'), options);
       chart.render();
     </script>
   </body>

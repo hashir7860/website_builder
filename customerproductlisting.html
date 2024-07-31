@@ -120,7 +120,7 @@
       <div class="content pb-5">
         <!-- Navbar Start -->
         <nav
-          class="navbar navbar-expand bg-white navbar-light bg-transparent px-4 py-3"
+          class="navbar navbar-expand bg-white navbar-light bg-transparent px-4 pb-3 pt-2"
         >
           <a
             href="#"
@@ -130,7 +130,7 @@
           </a>
           <h3 class="customer-heading m-0">Prodcuts Listing</h3>
           <div class="navbar-nav align-items-center ms-auto">
-            <div class="input-search position-relative">
+            <div class="input-search position-relative d-none d-md-block me-3">
               <input
                 type="text"
                 placeholder="Search Content..."
@@ -140,31 +140,30 @@
                 class="fa fa-search search-icon search-icon-2 text-secondary"
               ></span>
             </div>
-            <div>
-              <label for="theme" class="theme">
-                <span class="theme__toggle-wrap">
-                  <input
-                    id="theme"
-                    class="theme__toggle"
-                    type="checkbox"
-                    role="switch"
-                    name="theme"
-                    value="dark"
-                  />
-                  <span class="theme__fill"></span>
-                  <span class="theme__icon">
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                    <span class="theme__icon-part"></span>
-                  </span>
-                </span>
-              </label>
+            <div class="d-flex gap-3 align-items-center">
+              <img src="dashasset/img/customer -message.svg" alt="">
+              <img src="dashasset/img/customer-norification.svg" alt="">
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  class="rounded-circle me-lg-2"
+                  src="dashasset/img/customer-profile-img.png"
+                  alt=""
+                  width="40" height="40"
+                />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0"
+              >
+                <a href="profile.html" class="dropdown-item">My Profile</a>
+                <a href="profilesetting.html" class="dropdown-item">Settings</a>
+                <a href="#" class="dropdown-item">Log Out</a>
+              </div>
             </div>
           </div>
         </nav>
