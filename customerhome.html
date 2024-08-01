@@ -33,14 +33,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .step {
+        display: none;
+      }
+      .step.active {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header class="home-header">
       <nav class="container-fluid navbar fixed-top navbar-expand-lg py-2">
         <div class="container">
-          <!-- <a class="navbar-brand" href="index.html">
-            <h1 class="logo m-0">LOGO</h1>
-          </a> -->
           <button
             class="navbar-toggler bg-white"
             type="button"
@@ -98,24 +103,98 @@
     <!-- hero section -->
     <section id="hero" class="d-flex align-items-center">
       <div class="container text-center">
-        <div>
-          <p class="description blue-txtcolor">
-            Odoo AI E-Commerce Website Builder
-          </p>
-          <h1 class="main-heading">
-            Enter your Business Name:
-          </h1>
-          <div class="form-group mx-3 mx-md-5 px-0 px-md-5 my-4">
-            <input
-              type="text"
-              placeholder="Phone No"
-              class="form-control subdescription input-bg"
-              id="exampleFormControlInput1"
-            />
+        <p class="description blue-txtcolor">
+          Odoo AI E-Commerce Website Builder
+        </p>
+        <div id="multiStepForm">
+          <!-- Step 1 -->
+          <div class="step active">
+            <h1 class="main-heading">Enter your Business Name:</h1>
+            <div class="form-group mx-3 mx-md-5 px-0 px-md-5 my-4">
+              <input
+                type="text"
+                class="form-control subdescription input-bg"
+                id="businessName"
+              />
+            </div>
+            <button
+              class="btn generate-btn text-white px-4 mt-3"
+              onclick="nextStep()"
+            >
+              Next
+            </button>
           </div>
-          <button class="btn generate-btn text-white px-4 mt-3">
-            <span>Next</span>
-          </button>
+
+          <!-- Step 2 -->
+
+          <div class="step">
+            <h1 class="main-heading">You want to Sell Products?</h1>
+            <div class="form-group mx-3 mx-md-5 px-0 px-md-5 my-4">
+              <input
+                type="text"
+                class="form-control subdescription input-bg"
+                id="phoneNo"
+              />
+            </div>
+            <button
+              class="btn generate-btn text-white px-4 mt-3"
+              onclick="nextStep()"
+            >
+              Next
+            </button>
+          </div>
+
+          <div class="step">
+            <h1 class="main-heading">You want to Schedule Appointments?</h1>
+            <div class="form-group mx-3 mx-md-5 px-0 px-md-5 my-4">
+              <input
+                type="text"
+                class="form-control subdescription input-bg"
+                id="phoneNo"
+              />
+            </div>
+            <button
+              class="btn generate-btn text-white px-4 mt-3"
+              onclick="nextStep()"
+            >
+              Next
+            </button>
+          </div>
+
+          <div class="step">
+            <h1 class="main-heading">Select Business Type</h1>
+            <div class="form-group mx-3 mx-md-5 px-0 px-md-5 my-4">
+              <input
+                type="text"
+                class="form-control subdescription input-bg"
+                id="phoneNo"
+              />
+            </div>
+            <button
+              class="btn generate-btn text-white px-4 mt-3"
+              onclick="nextStep()"
+            >
+              Next
+            </button>
+          </div>
+
+          <!-- Step 3 -->
+          <!-- <div class="step">
+            <h1 class="main-heading">Confirm your Details:</h1>
+            <p id="confirmDetails"></p>
+            <button
+              class="btn generate-btn text-white px-4 mt-3"
+              onclick="prevStep()"
+            >
+              Previous
+            </button>
+            <button
+              class="btn generate-btn text-white px-4 mt-3"
+              onclick="submitForm()"
+            >
+              Submit
+            </button>
+          </div> -->
         </div>
       </div>
     </section>
@@ -128,8 +207,7 @@
           <div class="row">
             <div class="col-md-4 mt-3">
               <h4 class="heading fs-1 text-white">
-                E-Commerce <br class="d-none d-md-block" />
-                store with odoo
+                E-Commerce <br class="d-none d-md-block" />store with odoo
               </h4>
               <p class="description text-white fs-4">
                 Embark on your e-commerce journey with Odoo's AI-powered website
@@ -140,9 +218,7 @@
               <div>
                 <h4 class="description text-white mb-3">Company</h4>
                 <ul class="list-unstyled description fs-6">
-                  <li>
-                    <a href="#" class="text-decoration-none">About Us</a>
-                  </li>
+                  <li><a href="#" class="text-decoration-none">About Us</a></li>
                   <li>
                     <a href="#" class="text-decoration-none">Contact Us</a>
                   </li>
@@ -154,12 +230,8 @@
                   <li>
                     <a href="#" class="text-decoration-none">Affiliates</a>
                   </li>
-                  <li>
-                    <a href="#" class="text-decoration-none">Careers </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-decoration-none">Pricing</a>
-                  </li>
+                  <li><a href="#" class="text-decoration-none">Careers </a></li>
+                  <li><a href="#" class="text-decoration-none">Pricing</a></li>
                 </ul>
               </div>
             </div>
@@ -167,9 +239,7 @@
               <div>
                 <h4 class="description text-white mb-3">Company</h4>
                 <ul class="list-unstyled description fs-6">
-                  <li>
-                    <a href="#" class="text-decoration-none">About Us</a>
-                  </li>
+                  <li><a href="#" class="text-decoration-none">About Us</a></li>
                   <li>
                     <a href="#" class="text-decoration-none">Contact Us</a>
                   </li>
@@ -181,12 +251,8 @@
                   <li>
                     <a href="#" class="text-decoration-none">Affiliates</a>
                   </li>
-                  <li>
-                    <a href="#" class="text-decoration-none">Careers </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-decoration-none">Pricing</a>
-                  </li>
+                  <li><a href="#" class="text-decoration-none">Careers </a></li>
+                  <li><a href="#" class="text-decoration-none">Pricing</a></li>
                 </ul>
               </div>
             </div>
@@ -195,6 +261,49 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <script>
+      let currentStep = 0;
+
+      function showStep(step) {
+        const steps = document.querySelectorAll(".step");
+        steps.forEach((step, index) => {
+          step.classList.toggle("active", index === currentStep);
+        });
+      }
+
+      function nextStep() {
+        const steps = document.querySelectorAll(".step");
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      }
+
+      function prevStep() {
+        if (currentStep > 0) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      }
+
+      function submitForm() {
+        const businessName = document.getElementById("businessName").value;
+        const phoneNo = document.getElementById("phoneNo").value;
+        const email = document.getElementById("email").value;
+        const confirmDetails = document.getElementById("confirmDetails");
+        confirmDetails.innerHTML = `
+      <p>Business Name: ${businessName}</p>
+      <p>Phone No: ${phoneNo}</p>
+      <p>Email: ${email}</p>
+    `;
+        alert("Form submitted successfully!");
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showStep(currentStep);
+      });
+    </script>
 
     <script src="assets/js/main.js"></script>
     <script

@@ -248,7 +248,7 @@
     background: rgba(225, 232, 240, 1);
 }
 
-.back-btn:hover     {
+.back-btn:hover {
     background: rgba(225, 232, 240, 1);
 }
 
@@ -301,6 +301,10 @@
     color: rgba(181, 181, 195, 1);
 }
 
+.blue-txtcolor {
+    color: rgba(55, 81, 255, 1);
+}
+
 .green-shoes-bg {
     background: url(/dashasset/img/image.png);
     background-repeat: no-repeat;
@@ -327,14 +331,32 @@
     background: rgba(243, 246, 249, 1);
 }
 
+.customer-dashboard-card .card {
+    height: 123px;
+}
+
+.blue-card-bg {
+    background: linear-gradient(98.86deg, #6BAAFC 0%, #305FEC 100%);
+}
+
+.red-card-bg {
+    background: linear-gradient(98.86deg, #EF5E7A 0%, #D35385 100%);
+}
+
+.pink-card-bg {
+    background: linear-gradient(98.86deg, #D623FE 0%, #A530F2 100%);
+}
+
 .card-shadow {
     box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
 }
 
 .card-shadow-2 {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
-    /* box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 4px -4px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.card-shadow-3 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .badge {
@@ -362,6 +384,19 @@
     color: rgba(255, 0, 0, 1);
 }
 
+.badge.bg-darkyellow {
+    background: rgba(254, 196, 0, 1);
+}
+
+.badge.bg-darkgreen {
+    background: rgba(41, 204, 151, 1);
+}
+
+.badge.bg-grey {
+    background: rgba(240, 241, 247, 1);
+    color: rgba(159, 162, 180, 1);
+}
+
 .bg-yellow {
     background: rgba(255, 198, 0, 0.16);
     color: rgba(255, 198, 0, 1);
@@ -374,6 +409,10 @@
 
 .skyblue-bg {
     background-color: rgba(215, 249, 239, 1);
+}
+
+.welcomeuser-bg{
+    background: rgba(194, 233, 255, 1);
 }
 
 .main-heading {
@@ -394,6 +433,18 @@
     font-weight: 800;
 }
 
+.number-heading {
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.trending-heading {
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .subheading {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -403,6 +454,20 @@
 .customer-subheading {
     font-family: "Inter", sans-serif;
     font-size: 18px;
+    font-weight: 400;
+}
+
+.description {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    color: rgba(97, 117, 138, 1);
+}
+
+.trending-description {
+    font-family: "Public Sans", sans-serif;
+    font-size: 13px;
     font-weight: 400;
 }
 
@@ -431,9 +496,36 @@
     left: 10px !important;
 }
 
+.employee-search-icon {
+    top: 43% !important;
+    left: 10px;
+}
+
+.employee-search {
+    border: 1px solid rgba(145, 164, 183, 1);
+    background: rgba(248, 250, 252, 1);
+}
 
 .input-search input {
     width: 250px;
+}
+
+.blue-circle {
+    position: absolute;
+    top: 34%;
+    left: 32%;
+}
+
+.skyblue-circle {
+    position: absolute;
+    top: 58%;
+    right: 27%;
+}
+
+.green-circle {
+    position: absolute;
+    top: 72%;
+    left: 32%;
 }
 
 /* Switch */
@@ -671,13 +763,27 @@
     font-weight: 400;
 }
 
+@media(max-width: 1024px) {
+    .blue-circle {
+        left: 26%;
+    }
+
+    .skyblue-circle {
+        right: 18%;
+    }
+    
+    .green-circle {
+        left: 26%;
+    }
+}
+
 @media(max-width: 768px) {
     .input-search input {
         width: 195px;
     }
 
     .sidebar {
-        top: 10px;
+        top: 14%;
     }
 }
 
