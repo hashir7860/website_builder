@@ -765,15 +765,17 @@
 
 @media(max-width: 1024px) {
     .blue-circle {
-        left: 26%;
+        left: 25%;
+        top: 36%;
     }
 
     .skyblue-circle {
-        right: 18%;
+        right: 17%;
     }
     
     .green-circle {
-        left: 26%;
+        left: 25%;
+        top: 70%;
     }
 }
 
