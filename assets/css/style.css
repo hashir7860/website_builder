@@ -110,6 +110,10 @@
     box-shadow: 0px -4px 5.6px 0px rgba(0, 0, 0, 0.25);
 }
 
+.card-shadow-2 {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+
 .ratings-card {
     background: rgba(249, 246, 246, 1);
 }
@@ -191,7 +195,7 @@
 }
 
 .checkbox:checked+.switch {
-    background-color: #e9e9eb;
+    background-color: var(--Sapphire-700, rgba(58, 91, 187, 1));
 }
 
 .checkbox:checked+.switch .slider {
