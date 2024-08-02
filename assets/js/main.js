@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    
+
 
     /**
      * Easy selector helper function
@@ -55,3 +55,12 @@
 
 
 })()
+
+function togglePasswordVisibility(toggleBtn) {
+    var passwordInput = toggleBtn.previousElementSibling;
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
