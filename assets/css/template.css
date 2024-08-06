@@ -1,0 +1,107 @@
+body {
+    background: rgba(248, 248, 248, 1);
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    /* color: black !important; */
+}
+
+.navbar-scrolled {
+    background: rgba(248, 248, 248, 1);
+    padding: 15px;
+}
+
+/* .navbar-scrolled .navbar-nav .nav-link,
+    .navbar-scrolled {
+        color: rgba(152, 161, 227, 1);
+} */
+
+#hero {
+    height: 100vh;
+}
+
+.about-hero {
+    background: url(/assets/img/template-images/template-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.contact-hero {
+    background: url(/assets/img/template-images/template-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.card-shadow {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-control {
+    background: rgba(249, 249, 249, 1) !important;
+}
+
+.btn {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-heading {
+    font-family: "Outfit", sans-serif;
+    font-size: 75px;
+    font-weight: 800;
+}
+
+.heading {
+    font-family: "Outfit", sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.subheading {
+    font-family: "Outfit", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.contact-heading {
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.description {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subdescription {
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#footer {
+    background: rgba(248, 248, 248, 1);
+}
+
+#footer li {
+    margin-top: 7px;
+}
+
+#footer li a {
+    color: black;
+    text-decoration: none;
+}
