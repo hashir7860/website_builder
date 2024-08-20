@@ -177,12 +177,49 @@ TEMPLATE 02 CSS
     font-weight: 500;
 }
 
+.darkpurple-txtcolor {
+    color: rgba(0, 14, 138, 1);
+}
+
 .contact-left-bg {
     background: rgba(151, 151, 151, 1);
 }
 
+.input-bg{
+    background: rgba(217, 217, 217, 1);
+}
+
 .footer-2 {
     background: rgba(245, 245, 245, 1);
+}
+
+.accordion-item {
+    background: transparent;
+}
+
+.accordion-button {
+    background: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.input-search .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.input-search input {
+    padding-left: 40px;
 }
 
 .footer-2 .subheading {
