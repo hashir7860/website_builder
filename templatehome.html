@@ -24,6 +24,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/template.css" />
   </head>
   <body>
@@ -233,6 +241,107 @@
     </section>
     <!-- End Promoting Culture section -->
 
+    <!-- Get the outfit section -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="carousel-wrap position-relative p-4">
+          <div class="owl-carousel owl-theme text-start">
+            <div class="item">
+              <div class="card border-0 h-100 py-3 bg-transparent">
+                <div class="card-body outfit-bg rounded-3">
+                  <img
+                    src="assets/img/template-images/get the outfit-1.png"
+                    alt=""
+                    class="img-fluid outfit-img"
+                  />
+                </div>
+                <div
+                  class="card-footer bg-transparent border-0 text-center mt-4"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-dark text-white fw-normal px-4 rounded-0"
+                    >VIEW THIS STYLE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 h-100 py-3 bg-transparent">
+                <div class="card-body outfit-bg rounded-3">
+                  <img
+                    src="assets/img/template-images/get the outfit-2.png"
+                    alt=""
+                    class="img-fluid outfit-img"
+                  />
+                </div>
+                <div
+                  class="card-footer bg-transparent border-0 text-center mt-4"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-dark text-white fw-normal px-4 rounded-0"
+                    >VIEW THIS STYLE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 h-100 py-3 bg-transparent">
+                <div class="card-body outfit-bg rounded-3">
+                  <img
+                    src="assets/img/template-images/get the outfit-1.png"
+                    alt=""
+                    class="img-fluid outfit-img"
+                  />
+                </div>
+                <div
+                  class="card-footer bg-transparent border-0 text-center mt-4"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-dark text-white fw-normal px-4 rounded-0"
+                    >VIEW THIS STYLE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 h-100 py-3 bg-transparent">
+                <div class="card-body outfit-bg rounded-3">
+                  <img
+                    src="assets/img/template-images/get the outfit-2.png"
+                    alt=""
+                    class="img-fluid outfit-img"
+                  />
+                </div>
+                <div
+                  class="card-footer bg-transparent border-0 text-center mt-4"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-dark text-white fw-normal px-4 rounded-0"
+                    >VIEW THIS STYLE</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End get the outfit section -->
+
+    <!-- Tales of street section -->
+    <section>
+      <div
+        class="container d-flex justify-content-center align-items-center mt-5 about-hero text-center"
+      >
+        <h1 class="heading text-white">TALES OF STREETS</h1>
+      </div>
+    </section>
+    <!-- End Tales of street section -->
+
     <!-- Feature section -->
     <section class="my-5 pt-5">
       <div class="container">
@@ -344,6 +453,34 @@
     </section>
     <!-- End Feature section -->
 
+    <!-- Stay updated section -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="card border-0 outfit-bg rounded-0">
+          <div class="card-body">
+            <div class="row align-items-center p-4">
+              <div class="col-md-6 my-3">
+                <h3 class="contact-heading fw-normal m-0">
+                  SIGN UP TO STAY UPDATED <br class="d-none d-lg-block"> ON THE STREEWEAR SCENE!
+                </h3>
+              </div>
+              <div class="col-md-6 my-3 bg-white p-3">
+                <div class="d-flex align-items-center">
+                  <div class="w-100">
+                    <input type="email" placeholder="Enter your email" class="form-control border-0 description text-secondary fw-light w-100 bg-white">
+                  </div>
+                  <div>
+                    <button class="btn btn-dark text-white rounded-0">SUBMIT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End stay updated section -->
+
     <!-- footer section -->
     <footer id="footer" class="py-5">
       <div class="container">
@@ -418,5 +555,34 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 150,
+          nav: true,
+          dots: false,
+          navText: [
+            '<i class="fa-solid fa-chevron-left carousel-arrow-left fs-3 text-dark"></i>',
+            '<i class="fa-solid fa-chevron-right carousel-arrow-right fs-3 text-dark"></i>',
+          ],
+          autoplay: true,
+          // autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              margin: 30,
+              items: 2,
+            },
+            1000: {
+              items: 2,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>

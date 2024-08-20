@@ -51,12 +51,16 @@ body {
     min-height: 500px;
 }
 
+.outfit-bg {
+    background: rgba(241, 241, 241, 1);
+}
+
 .card-shadow {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.form-control {
-    background: rgba(249, 249, 249, 1) !important;
+.form-control:focus {
+    box-shadow: none;
 }
 
 .btn {
@@ -101,8 +105,10 @@ body {
     font-weight: 300;
 }
 
-#footer {
-    background: rgba(248, 248, 248, 1);
+.outfit-img {
+    height: 450px;
+    width: 162px;
+    object-fit: contain;
 }
 
 #footer li {
@@ -113,6 +119,83 @@ body {
     color: black;
     text-decoration: none;
 }
+
+.carousel-arrow-left {
+    position: absolute;
+    top: 39%;
+    left: -50px;
+}
+
+.carousel-arrow-right {
+    position: absolute;
+    top: 39%;
+    right: -50px;
+}
+
+/****************************************************
+TEMPLATE 02 CSS
+****************************************************/
+.navbar-2 .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+
+.poppin-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.poppin-subheading {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.poppin-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.label {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.poppin-linespace {
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.btn-2 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500;
+}
+
+.contact-left-bg {
+    background: rgba(151, 151, 151, 1);
+}
+
+.footer-2 {
+    background: rgba(245, 245, 245, 1);
+}
+
+.footer-2 .subheading {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer-2 li {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
 
 @media(max-width: 768px) {
     #footer ul {
@@ -130,6 +213,26 @@ body {
     .main-heading {
         font-size: 50px;
     }
+
+    .carousel-arrow-left {
+        position: absolute;
+        top: 39%;
+        left: -30px;
+    }
+
+    .carousel-arrow-right {
+        position: absolute;
+        top: 39%;
+        right: -30px;
+    }
+
+    .poppin-heading {
+        font-size: 35px;
+    }
+
+    .poppin-description {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -139,6 +242,22 @@ body {
 
     .main-heading {
         font-size: 34px;
+    }
+
+    .carousel-arrow-left {
+        position: absolute;
+        top: 39%;
+        left: -20px;
+    }
+
+    .carousel-arrow-right {
+        position: absolute;
+        top: 39%;
+        right: -20px;
+    }
+
+    .poppin-heading {
+        font-size: 30px;
     }
 }
 
