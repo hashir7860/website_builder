@@ -49,219 +49,342 @@
       </div>
       <!-- Spinner End -->
 
+      <!-- Sidebar Start -->
+      <div class="sidebar customer-sidebar pb-3 bg-white">
+        <nav class="navbar navbar-light">
+          <div class="mb-4 p-3">
+            <img
+              src="dashasset/img/customer-logo.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="navbar-nav w-100">
+            <p class="submenu nav-item nav-link pt-0 mb-0 bg-transparent">
+              Main menu
+            </p>
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-dashboard.svg"
+                alt=""
+                class="me-2"
+              /><span>Dashboard</span></a
+            >
+            <a href="#" class="nav-item nav-link d-flex text-dark"
+              ><img
+                src="dashasset/img/customer-order.svg"
+                alt=""
+                class="me-2"
+              /><span>Order Management</span></a
+            >
+            <a href="#" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-sites.svg"
+                alt=""
+                class="me-2"
+              /><span>My Sites</span></a
+            >
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-appointment.svg"
+                alt=""
+                class="me-2"
+              /><span>Shedule Appointments</span></a
+            >
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-domain.svg"
+                alt=""
+                class="me-2"
+              /><span>Domain</span></a
+            >
+            <a href="dashboard.html" class="nav-item nav-link text-dark"
+              ><img
+                src="dashasset/img/customer-transaction.svg"
+                alt=""
+                class="me-2"
+              /><span>Transaction</span></a
+            >
+            <p class="submenu nav-item nav-link py-0 mb-0">Products</p>
+            <a href="dashboard.html" class="nav-item nav-link text-dark active"
+              ><img
+                src="dashasset/img/customer-productlist.svg"
+                alt=""
+                class="me-2"
+              /><span>Product List</span></a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- Sidebar End -->
+
       <!-- Content Start -->
-      <div class="container my-5">
-        <div class="card rounded-3 border-0 shadow h-100 p-3 mt-4">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-6 mt-3 mt-md-0">
-                <div class="form-group">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >First Name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="Mona"
-                  />
-                </div>
+      <div class="content pb-5">
+        <!-- Navbar Start -->
+        <nav
+          class="navbar navbar-expand bg-white navbar-light bg-transparent px-4 pb-3 pt-2"
+        >
+          <a
+            href="#"
+            class="sidebar-toggler bg-transparent flex-shrink-0 text-decoration-none me-3"
+          >
+            <i class="fa fa-bars text-dark"></i>
+          </a>
+          <h3 class="customer-heading m-0">Profile</h3>
+          <div class="navbar-nav align-items-center ms-auto">
+            <div class="input-search position-relative d-none d-md-block me-3">
+              <input
+                type="text"
+                placeholder="Search Content..."
+                class="form-control rounded-3 subdescription fw-bold ps-4 ms-1"
+              />
+              <span
+                class="fa fa-search search-icon search-icon-2 text-secondary"
+              ></span>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+              <img src="dashasset/img/customer -message.svg" alt="" />
+              <img src="dashasset/img/customer-norification.svg" alt="" />
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <img
+                  class="rounded-circle me-lg-2"
+                  src="dashasset/img/customer-profile-img.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0"
+              >
+                <a href="profile.html" class="dropdown-item">My Profile</a>
+                <a href="profilesetting.html" class="dropdown-item">Settings</a>
+                <a href="#" class="dropdown-item">Log Out</a>
               </div>
-              <div class="col-md-6 mt-3 mt-md-0">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Date of birth</label
-                  >
-                  <input
-                    type="date"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="@MonaLissa"
-                  />
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Sales Chart Start -->
+        <div class="container-fluid pt-4 px-4">
+          <div class="card rounded-3 border-0 shadow h-100 p-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 mt-3 mt-md-0">
+                  <div class="form-group">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="Mona"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="example@mail.com"
-                  />
+                <div class="col-md-6 mt-3 mt-md-0">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Date of birth</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="@MonaLissa"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Phone Number</label
-                  >
-                  <input
-                    type="tel"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="+123-456-789"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="example@mail.com"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Age</label
-                  >
-                  <input
-                    type="number"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="+123-456-789"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="+123-456-789"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Age</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="+123-456-789"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Age</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="+123-456-789"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Age</label
-                  >
-                  <input
-                    type="file"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="+123-456-789"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Age</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="+123-456-789"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Age</label
-                  >
-                  <input
-                    type="month"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="+123-456-789"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Age</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="+123-456-789"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Age</label
-                  >
-                  <input
-                    type="week"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="+123-456-789"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Age</label
+                    >
+                    <input
+                      type="month"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="+123-456-789"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Age</label
-                  >
-                  <input
-                    type="search"
-                    class="form-control trending-heading fw-normal mt-2"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Age</label
+                    >
+                    <input
+                      type="week"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="+123-456-789"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Time</label
-                  >
-                  <input
-                    type="time"
-                    class="form-control trending-heading fw-normal mt-2"
-                    value="+123-456-789"
-                  />
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Age</label
+                    >
+                    <input
+                      type="search"
+                      class="form-control trending-heading fw-normal mt-2"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group">
-                  <label
-                    for="exampleFormControlSelect1"
-                    class="trending-heading"
-                    >Dropdown</label
-                  >
-                  <select
-                    class="form-control form-select trending-heading fw-normal mt-2"
-                    aria-label="Default select example"
-                    id="exampleFormControlSelect1"
-                  >
-                    <option>Dropdown 1</option>
-                    <option>Dropdown 2</option>
-                    <option>Dropdown 3</option>
-                  </select>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Time</label
+                    >
+                    <input
+                      type="time"
+                      class="form-control trending-heading fw-normal mt-2"
+                      value="+123-456-789"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="flexCheckDefault"
-                  />
-                  <label
-                    class="form-check-label trending-heading"
-                    for="flexCheckDefault"
-                  >
-                    Default checkbox
-                  </label>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group">
+                    <label
+                      for="exampleFormControlSelect1"
+                      class="trending-heading"
+                      >Dropdown</label
+                    >
+                    <select
+                      class="form-control form-select trending-heading fw-normal mt-2"
+                      aria-label="Default select example"
+                      id="exampleFormControlSelect1"
+                    >
+                      <option>Dropdown 1</option>
+                      <option>Dropdown 2</option>
+                      <option>Dropdown 3</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="form-group fw-bold">
-                  <label for="customRange1" class="form-label trending-heading"
-                    >Example range</label
-                  >
-                  <input type="range" class="form-range" id="customRange1" />
+                <div class="col-md-6 mt-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label trending-heading"
+                      for="flexCheckDefault"
+                    >
+                      Default checkbox
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="exampleFormControlTextarea1" class="mb-1 fw-bold"
-                  >Note</label
-                >
-                <textarea
-                  class="form-control subheading"
-                  id="exampleFormControlTextarea1"
-                  placeholder="Add Note"
-                  rows="5"
-                ></textarea>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label
+                      for="customRange1"
+                      class="form-label trending-heading"
+                      >Example range</label
+                    >
+                    <input type="range" class="form-range" id="customRange1" />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="exampleFormControlTextarea1" class="mb-1 fw-bold"
+                    >Note</label
+                  >
+                  <textarea
+                    class="form-control subheading"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Add Note"
+                    rows="5"
+                  ></textarea>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Sales Chart End -->
       </div>
       <!-- Content End -->
     </div>
