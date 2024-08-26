@@ -411,7 +411,7 @@
     background-color: rgba(215, 249, 239, 1);
 }
 
-.welcomeuser-bg{
+.welcomeuser-bg {
     background: rgba(194, 233, 255, 1);
 }
 
@@ -526,6 +526,35 @@
     position: absolute;
     top: 72%;
     left: 32%;
+}
+
+.edit-profile {
+    position: absolute;
+    top: -24px;
+    right: 31px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-input {
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.password-toggle:hover {
+    color: #333;
 }
 
 /* Switch */
@@ -772,7 +801,7 @@
     .skyblue-circle {
         right: 17%;
     }
-    
+
     .green-circle {
         left: 25%;
         top: 70%;
