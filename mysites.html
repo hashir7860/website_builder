@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Customer Product</title>
+    <title>My Sites</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -60,7 +60,9 @@
             />
           </div>
           <div class="navbar-nav w-100">
-            <p class="submenu nav-item nav-link pt-0 mb-0 bg-transparent">Main menu</p>
+            <p class="submenu nav-item nav-link pt-0 mb-0 bg-transparent">
+              Main menu
+            </p>
             <a href="dashboard.html" class="nav-item nav-link text-dark"
               ><img
                 src="dashasset/img/customer-dashboard.svg"
@@ -75,7 +77,7 @@
                 class="me-2"
               /><span>Order Management</span></a
             >
-            <a href="mysites.html" class="nav-item nav-link text-dark"
+            <a href="mysites.html" class="nav-item nav-link text-dark active"
               ><img
                 src="dashasset/img/customer-sites.svg"
                 alt=""
@@ -103,8 +105,10 @@
                 class="me-2"
               /><span>Transaction</span></a
             >
-            <p class="submenu nav-item nav-link py-0 mb-0 bg-transparent">Products</p>
-            <a href="customerproductlisting.html" class="nav-item nav-link text-dark active"
+            <p class="submenu nav-item nav-link py-0 mb-0 bg-transparent">
+              Products
+            </p>
+            <a href="customerproductlisting.html" class="nav-item nav-link text-dark"
               ><img
                 src="dashasset/img/customer-productlist.svg"
                 alt=""
@@ -128,7 +132,7 @@
           >
             <i class="fa fa-bars text-dark"></i>
           </a>
-          <h3 class="customer-heading m-0">Prodcuts</h3>
+          <h3 class="customer-heading m-0">Domain</h3>
           <div class="navbar-nav align-items-center ms-auto">
             <div class="input-search position-relative d-none d-md-block me-3">
               <input
@@ -167,99 +171,173 @@
         <!-- Navbar End -->
 
         <!-- Sales Chart Start -->
-        <div class="container-fluid pt-4 px-3">
-          <div class="card border-0 card-shadow">
-            <div class="card-body px-4">
-              <div class="row align-items-center">
-                <div class="col-md-8 mt-3">
-                  <div
-                    class="green-shoes-bg py-5 ps-3 d-flex align-items-center"
-                  >
-                    <div class="">
-                      <h2 class="heading m-0">Nike Snickers</h2>
-                      <p class="subheading fs-6 green-txtcolor m-0">
-                        Get Amazing & Great Nike Shoes
-                      </p>
-                    </div>
-                  </div>
-                  <div class="red-shoes-bg py-5 ps-3 mt-3 align-items-center">
-                    <div>
-                      <h2 class="heading m-0">Nike White Shoes</h2>
-                      <p class="subheading fs-6 red-txtcolor m-0">
-                        Get Amazing & Great Nike Shoes
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <div class="container-fluid pt-3 px-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h2 class="heading m-0">My Sites</h2>
+            </div>
+            <div>
+              <button class="btn appointment-btn text-white">
+                <span><i class="fa-solid fa-plus me-2"></i></span>Create New
+                Site
+              </button>
+            </div>
+          </div>
+          <div class="card border-0 card-shadow mt-4">
+            <div class="card-body py-3">
+              <div class="row">
                 <div class="col-md-4 mt-3">
-                  <div class="card border-0 light-white-bg">
-                    <div class="card-body text-center pt-0">
+                  <div class="card bg-transparent border-0 h-100">
+                    <div class="card-header border-0 bg-transparent">
                       <img
-                        src="dashasset/img/bag.png"
+                        src="dashasset/img/marketplace-card.png"
                         alt=""
-                        class="img-fluid text-center"
+                        class="img-fluid w-100"
                       />
+                    </div>
+                    <div class="card-body pt-1">
+                      <h2 class="heading fs-5">Ecommerce store</h2>
+                      <p class="subheading m-0">last update: 27/28/2024</p>
                     </div>
                     <div
                       class="card-footer bg-transparent border-0 text-center pt-0"
                     >
-                      <h2 class="heading m-0">Nike White Shoes</h2>
-                      <p class="subheading fs-6 purple-txtcolor m-0">
-                        Get Amazing & Great Nike Shoes
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 mt-3">
-                  <div class="card border-0 light-color-bg h-100 rounded-4">
-                    <div class="card-body text-center">
-                      <img
-                        src="dashasset/img/headphone.png"
-                        alt=""
-                        class="img-fluid text-center"
-                      />
-                    </div>
-                    <div class="card-footer bg-transparent border-0 pb-3">
-                      <h2 class="heading m-0">Bose Headphones 700</h2>
-                      <p class="subheading fs-6 light-txtcolor m-0 fw-bold">
-                        $ 370.00
-                      </p>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-danger text-white w-100">
+                          <span>
+                            <i class="bi bi-trash3-fill me-1"></i>
+                          </span>
+                          Delete
+                        </button>
+                        <button class="btn appointment-btn text-white w-100">
+                          <span><i class="fa-solid fa-pencil me-1"></i></span>
+                          Edit
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 mt-3">
-                  <div class="card border-0 light-color-bg h-100 rounded-4">
-                    <div class="card-body text-center">
+                  <div class="card bg-transparent border-0 h-100">
+                    <div class="card-header border-0 bg-transparent">
                       <img
-                        src="dashasset/img/headphone.png"
+                        src="dashasset/img/marketplace-card.png"
                         alt=""
-                        class="img-fluid text-center"
+                        class="img-fluid w-100"
                       />
                     </div>
-                    <div class="card-footer bg-transparent border-0 pb-3">
-                      <h2 class="heading m-0">Amazon Bip Home</h2>
-                      <p class="subheading fs-6 light-txtcolor m-0 fw-bold">
-                        $ 370.00
-                      </p>
+                    <div class="card-body pt-1">
+                      <h2 class="heading fs-5">Education website</h2>
+                      <p class="subheading m-0">last update: 27/28/2024</p>
+                    </div>
+                    <div
+                      class="card-footer bg-transparent border-0 text-center pt-0"
+                    >
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-danger text-white w-100">
+                          <span>
+                            <i class="bi bi-trash3-fill me-1"></i>
+                          </span>
+                          Delete
+                        </button>
+                        <button class="btn appointment-btn text-white w-100">
+                          <span><i class="fa-solid fa-pencil me-1"></i></span>
+                          Edit
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 mt-3">
-                  <div class="card border-0 light-color-bg h-100 rounded-4">
-                    <div class="card-body text-center">
+                  <div class="card bg-transparent border-0 h-100">
+                    <div class="card-header border-0 bg-transparent">
                       <img
-                        src="dashasset/img/vases.png"
+                        src="dashasset/img/marketplace-card.png"
                         alt=""
-                        class="img-fluid text-center"
+                        class="img-fluid w-100"
                       />
                     </div>
-                    <div class="card-footer bg-transparent border-0 text-center pb-3">
-                      <h2 class="heading m-0">Black & White Vases</h2>
-                      <p class="subheading fs-6 light-txtcolor m-0 fw-bold">
-                        $ 370.00
-                      </p>
+                    <div class="card-body pt-1">
+                      <h2 class="heading fs-5">Buisness Website</h2>
+                      <p class="subheading m-0">last update: 27/28/2024</p>
+                    </div>
+                    <div
+                      class="card-footer bg-transparent border-0 text-center pt-0"
+                    >
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-danger text-white w-100">
+                          <span>
+                            <i class="bi bi-trash3-fill me-1"></i>
+                          </span>
+                          Delete
+                        </button>
+                        <button class="btn appointment-btn text-white w-100">
+                          <span><i class="fa-solid fa-pencil me-1"></i></span>
+                          Edit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                  <div class="card bg-transparent border-0 h-100">
+                    <div class="card-header border-0 bg-transparent">
+                      <img
+                        src="dashasset/img/marketplace-card.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-body pt-1">
+                      <h2 class="heading fs-5">Logistics Website</h2>
+                      <p class="subheading m-0">last update: 27/28/2024</p>
+                    </div>
+                    <div
+                      class="card-footer bg-transparent border-0 text-center pt-0"
+                    >
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-danger text-white w-100">
+                          <span>
+                            <i class="bi bi-trash3-fill me-1"></i>
+                          </span>
+                          Delete
+                        </button>
+                        <button class="btn appointment-btn text-white w-100">
+                          <span><i class="fa-solid fa-pencil me-1"></i></span>
+                          Edit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                  <div class="card bg-transparent border-0 h-100">
+                    <div class="card-header border-0 bg-transparent">
+                      <img
+                        src="dashasset/img/marketplace-card.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-body pt-1">
+                      <h2 class="heading fs-5">Buisness Website</h2>
+                      <p class="subheading m-0">last update: 27/28/2024</p>
+                    </div>
+                    <div
+                      class="card-footer bg-transparent border-0 text-center pt-0"
+                    >
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-danger text-white w-100">
+                          <span>
+                            <i class="bi bi-trash3-fill me-1"></i>
+                          </span>
+                          Delete
+                        </button>
+                        <button class="btn appointment-btn text-white w-100">
+                          <span><i class="fa-solid fa-pencil me-1"></i></span>
+                          Edit
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -279,7 +357,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Template Javascript -->
     <script src="dashasset/js/main.js"></script>
   </body>
 </html>

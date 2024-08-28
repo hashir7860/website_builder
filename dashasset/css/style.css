@@ -224,7 +224,7 @@
     background: rgba(245, 245, 245, 1);
 }
 
-.activity-btn    {
+.activity-btn {
     border: 1px solid rgba(32, 81, 229, 1);
     background: rgba(244, 246, 253, 1);
     color: rgba(32, 81, 229, 1);
@@ -242,6 +242,14 @@
 
 .appointment-btn:hover {
     background: rgba(32, 81, 229, 1);
+}
+
+.delete-btn {
+    background: rgba(255, 0, 0, 0.11);
+}
+
+.delete-btn:hover {
+    background: rgba(255, 0, 0, 0.11);
 }
 
 .back-btn {

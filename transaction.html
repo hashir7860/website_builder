@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Statistics</title>
+    <title>Transaction</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -60,9 +60,7 @@
             />
           </div>
           <div class="navbar-nav w-100">
-            <p class="submenu nav-item nav-link pt-0 mb-0 bg-transparent">
-              Main menu
-            </p>
+            <p class="submenu nav-item nav-link pt-0 mb-0 bg-transparent">Main menu</p>
             <a href="dashboard.html" class="nav-item nav-link text-dark"
               ><img
                 src="dashasset/img/customer-dashboard.svg"
@@ -98,17 +96,15 @@
                 class="me-2"
               /><span>Domain</span></a
             >
-            <a href="transaction.html" class="nav-item nav-link text-dark"
+            <a href="transaction.html" class="nav-item nav-link text-dark active"
               ><img
                 src="dashasset/img/customer-transaction.svg"
                 alt=""
                 class="me-2"
-              /><span>Transaction</span></a
+              /><span>Transaction</span></a 
             >
-            <p class="submenu nav-item nav-link py-0 mb-0 bg-transparent">
-              Products
-            </p>
-            <a href="customerproductlisting.html" class="nav-item nav-link text-dark active"
+            <p class="submenu nav-item nav-link py-0 mb-0 bg-transparent">Products</p>
+            <a href="customerproductlisting.html" class="nav-item nav-link text-dark"
               ><img
                 src="dashasset/img/customer-productlist.svg"
                 alt=""
@@ -132,7 +128,7 @@
           >
             <i class="fa fa-bars text-dark"></i>
           </a>
-          <h3 class="customer-heading m-0">Prodcuts</h3>
+          <h3 class="customer-heading m-0">Transaction</h3>
           <div class="navbar-nav align-items-center ms-auto">
             <div class="input-search position-relative d-none d-md-block me-3">
               <input
@@ -171,109 +167,164 @@
         <!-- Navbar End -->
 
         <!-- Sales Chart Start -->
-        <div class="container-fluid pt-4 px-3">
-          <div class="row">
-            <div class="col-md-6 mt-3">
-              <div class="card border-0 rounded-3">
-                <div class="card-body">
-                  <h3 class="trending-heading fs-4 m-0">Visitors</h3>
-                  <div id="chart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mt-3">
-              <div class="card border-0 rounded-3">
-                <div class="card-body">
-                  <h3 class="trending-heading fs-4 m-0">Sales</h3>
-                  <div id="chart2"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card border-0 card-shadow mt-4">
+        <div class="container-fluid pt-4 px-4">
+          <div class="card border-0 card-shadow">
             <div class="card-body py-3">
-              <h3 class="trending-heading fs-4 m-0">Recent Websites</h3>
               <div class="table-responsive mt-3">
                 <table class="table">
                   <thead>
-                    <tr>
-                      <th class="text-secondary">ID</th>
-                      <th class="text-secondary">Website Name</th>
-                      <th class="text-secondary">Website URL</th>
+                    <tr class="fw-bold">
+                      <th class="text-secondary">Id</th>
+                      <th class="text-secondary">Name</th>
+                      <th class="text-secondary">Plan Name</th>
+                      <th class="text-secondary">Plan Duration</th>
+                      <th class="text-secondary">Price</th>
                       <th class="text-secondary">Action</th>
                     </tr>
                   </thead>
                   <tbody class="">
                     <tr>
                       <td class="align-middle">1</td>
-                      <td class="align-middle">ABC Website</td>
+                      <td class="align-middle">Jhon Doe</td>
+                      <td class="align-middle">Stater</td>
+                      <td class="align-middle">14 Days</td>
+                      <td class="align-middle">$19.00</td>
                       <td class="align-middle">
-                        https://website-builder-five-phi.vercel.app/
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn text-danger border-0 fs-4">
-                          <i class="bi bi-trash3-fill"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">2</td>
-                      <td class="align-middle">ABC Website</td>
-                      <td class="align-middle">
-                        https://website-builder-five-phi.vercel.app/
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn text-danger border-0 fs-4">
-                          <i class="bi bi-trash3-fill"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">3</td>
-                      <td class="align-middle">ABC Website</td>
-                      <td class="align-middle">
-                        https://website-builder-five-phi.vercel.app/
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn text-danger border-0 fs-4">
-                          <i class="bi bi-trash3-fill"></i>
-                        </button>
+                        <div class="dropdown">
+                          <button
+                            class="btn fw-normal fs-6 border-0"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="dashasset/img/dropdown.svg" alt="" />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                          </ul>
+                        </div>
                       </td>
                     </tr>
                     <tr>
-                      <td class="align-middle">4</td>
-                      <td class="align-middle">ABC Website</td>
+                      <td class="align-middle">1</td>
+                      <td class="align-middle">Jhon Doe</td>
+                      <td class="align-middle">Buisness</td>
+                      <td class="align-middle">14 Days</td>
+                      <td class="align-middle">$19.00</td>
                       <td class="align-middle">
-                        https://website-builder-five-phi.vercel.app/
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn text-danger border-0 fs-4">
-                          <i class="bi bi-trash3-fill"></i>
-                        </button>
+                        <div class="dropdown">
+                          <button
+                            class="btn fw-normal fs-6 border-0"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="dashasset/img/dropdown.svg" alt="" />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                          </ul>
+                        </div>
                       </td>
                     </tr>
                     <tr>
-                      <td class="align-middle">5</td>
-                      <td class="align-middle">ABC Website</td>
+                      <td class="align-middle">1</td>
+                      <td class="align-middle">Jhon Doe</td>
+                      <td class="align-middle">Enterprise</td>
+                      <td class="align-middle">14 Days</td>
+                      <td class="align-middle">$19.00</td>
                       <td class="align-middle">
-                        https://website-builder-five-phi.vercel.app/
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn text-danger border-0 fs-4">
-                          <i class="bi bi-trash3-fill"></i>
-                        </button>
+                        <div class="dropdown">
+                          <button
+                            class="btn fw-normal fs-6 border-0"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="dashasset/img/dropdown.svg" alt="" />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                          </ul>
+                        </div>
                       </td>
                     </tr>
                     <tr>
-                      <td class="align-middle">6</td>
-                      <td class="align-middle">ABC Website</td>
+                      <td class="align-middle">1</td>
+                      <td class="align-middle">Jhon Doe</td>
+                      <td class="align-middle">Stater</td>
+                      <td class="align-middle">14 Days</td>
+                      <td class="align-middle">$19.00</td>
                       <td class="align-middle">
-                        https://website-builder-five-phi.vercel.app/
+                        <div class="dropdown">
+                          <button
+                            class="btn fw-normal fs-6 border-0"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="dashasset/img/dropdown.svg" alt="" />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                          </ul>
+                        </div>
                       </td>
+                    </tr>
+                    <tr>
+                      <td class="align-middle">1</td>
+                      <td class="align-middle">Jhon Doe</td>
+                      <td class="align-middle">Buisness</td>
+                      <td class="align-middle">14 Days</td>
+                      <td class="align-middle">$19.00</td>
                       <td class="align-middle">
-                        <button class="btn text-danger border-0 fs-4">
-                          <i class="bi bi-trash3-fill"></i>
-                        </button>
+                        <div class="dropdown">
+                          <button
+                            class="btn fw-normal fs-6 border-0"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="dashasset/img/dropdown.svg" alt="" />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="align-middle">1</td>
+                      <td class="align-middle">Jhon Doe</td>
+                      <td class="align-middle">Enterprise</td>
+                      <td class="align-middle">14 Days</td>
+                      <td class="align-middle">$19.00</td>
+                      <td class="align-middle">
+                        <div class="dropdown">
+                          <button
+                            class="btn fw-normal fs-6 border-0"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="dashasset/img/dropdown.svg" alt="" />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                          </ul>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
@@ -342,8 +393,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Template Javascript -->
     <script src="dashasset/js/main.js"></script>
-    <script src="dashasset/js/graph.js"></script>
   </body>
 </html>
