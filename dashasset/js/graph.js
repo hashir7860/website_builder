@@ -118,7 +118,7 @@ var options = {
         colors: ["#3c50e0"], // Set the line color to black (#000000)
     },
     title: {
-        text: "3,331 downloads in the last 30 days",
+        // text: "3,331 downloads in the last 30 days",
         align: "center",
     },
     // subtitle: {
