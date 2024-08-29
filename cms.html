@@ -23,9 +23,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.css"
     />
 
     <!-- Stylesheet -->
@@ -128,7 +129,9 @@
             <p class="submenu nav-item nav-link py-0 mb-0 bg-transparent">
               Products
             </p>
-            <a href="customerproductlisting.html" class="nav-item nav-link text-dark"
+            <a
+              href="customerproductlisting.html"
+              class="nav-item nav-link text-dark"
               ><img
                 src="dashasset/img/customer-productlist.svg"
                 alt=""
@@ -193,23 +196,76 @@
         <!-- Sales Chart Start -->
         <div class="container-fluid pt-4 px-4">
           <div class="row mb-5">
-            <div class="col-md-3 mb-2">
-              <div class="card border-0 rounded-3 card-shadow h-100">
+            <div class="col-md-3">
+              <div class="card border-0 rounded-3 card-shadow">
                 <div class="card-body h-100">
                   <div class="tab">
                     <button
                       class="tablinks customer-subheading w-100 text-start"
                       id="defaultOpen"
-                      onclick="openCity(event, 'Personal-Info')"
+                      onclick="openCity(event, 'header-hero')"
                     >
                       Home Hero Section
                     </button>
                     <button
                       class="tablinks mt-2 customer-subheading w-100 text-start"
-                      onclick="openCity(event, 'Change-password')"
+                      onclick="openCity(event, 'step-to-generate')"
                     >
-                      <i class="fa-solid fa-lock me-2"></i>
-                      Change Password
+                      Step to generate
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'service-section')"
+                    >
+                      Service Section
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'domain-section')"
+                    >
+                      Domain Section
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'website-creation-section')"
+                    >
+                      Website Building
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'about-us-section')"
+                    >
+                      About Us Section
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'privacy-policy-section')"
+                    >
+                      Privacy Policy Section
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'contact-section')"
+                    >
+                      Contact Section
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'stop-writting-code-section')"
+                    >
+                      Stop Writting Section
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'pricing-hero-section')"
+                    >
+                      Pricing Hero Section
+                    </button>
+                    <button
+                      class="tablinks mt-2 customer-subheading w-100 text-start"
+                      onclick="openCity(event, 'pricing-plan-section')"
+                    >
+                      Pricing Plan Section
                     </button>
                   </div>
                 </div>
@@ -217,122 +273,579 @@
             </div>
 
             <div class="col-md-9">
-              <div class="card rounded-3 border-0 card-shadow">
-                <div class="card-body">
-                  <div class="row personal-info-row">
-                    <div class="col-md-3 col-xxl-2">
-                      <img
-                        src="dashasset/img/testimonial-1.jpg"
-                        alt=""
-                        class="img-fluid w-100 rounded-circle"
-                      />
-                      <div class="position-relative">
-                        <img
-                          src="dashasset/img/edit-btn.svg"
-                          alt="edit picture"
-                          class="img-fluid btn p-0 border-0 edit-profile"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-5 py-4">
-                      <h4 class="mb-3 heading w-100 border-0">Mona Lissa</h4>
-                      <p class="customer-subheading m-0 fw-normal fs-6">
-                        @monalissa
-                      </p>
-                      <p class="customer-subheading m-0 fw-normal fs-6">
-                        +1 234 345 3456
-                      </p>
-                      <p class="customer-subheading m-0 fw-normal fs-6">
-                        Monalissa@mail.com
-                      </p>
-                    </div>
-                    <div class="col-md-4 text-end">
-                      <p
-                        class="remove-picture text-danger mt-2 customer-subheading fs-6"
-                        style="cursor: pointer"
+              <div id="header-hero" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Small Heading</label
                       >
-                        Remove Profile Picture
-                      </p>
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Odoo AI E-Commerce Website Builder"
+                      />
                     </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Empower Your Digital Presence: Build Your Website with AI"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Update image</label
+                      >
+                      <input
+                        type="file"
+                        class="form-control trending-heading fw-normal mt-2"
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <img
+                        src="assets/img/hero-image.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
                   </div>
                 </div>
               </div>
-              <div id="Personal-Info" class="tabcontent">
-                <div class="card rounded-3 border-0 card-shadow h-100 p-3 mt-4">
+              <div id="step-to-generate" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
                   <div class="card-body">
+                    <div class="form-group">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Small Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Step to Generate"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="How to Build A Website Using AI"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >li</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Describe your buisness"
+                      />
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Generate with AI"
+                      />
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Customize your website"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Update image</label
+                      >
+                      <input
+                        type="file"
+                        class="form-control trending-heading fw-normal mt-2"
+                      />
+                    </div>
                     <div class="row">
-                      <div class="col-md-6 mt-3 mt-md-0">
+                      <div class="col-md-6 mt-4">
+                        <img
+                          src="assets/img/step-to-generate.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="service-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Our Services"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control trending-heading fw-normal mt-2"
+                        rows="6"
+                      >
+All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as necessary, making this the first true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.
+                      </textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Update image</label
+                          >
+                          <input
+                            type="file"
+                            class="form-control trending-heading fw-normal mt-2"
+                          />
+                        </div>
+                        <img
+                          src="assets/img/step-to-generate.png"
+                          alt=""
+                          class="img-fluid mt-3"
+                        />
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Selling Domain"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Securing a registered trademark protects your brand, & provides with the tools to prevent someone using similar signs and riding off the back of your business"
+                          />
+                        </div>
+                        <div class="mt-2">
+                          <img
+                            src="assets/img/services-1.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Templates"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Using AI tools to search for alternative spellings, and more. We ensure you don’t waste your time & money on a name that isn’t unique enough to be trademarked."
+                          />
+                        </div>
+                        <div class="mt-2">
+                          <img
+                            src="assets/img/services-2.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Website creation"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="To enforce your rights, know when others are using your trademark. Trademark Monitoring gives the information you need to enforce your trademark rights!"
+                          />
+                        </div>
+                        <div class="mt-2">
+                          <img
+                            src="assets/img/services-3.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Hosting"
+                          />
+                        </div>
+                        <div class="form-group mt-3">
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Securing a registered trademark protects your brand, & provides with the tools to prevent someone using similar signs and riding off the back of your business"
+                          />
+                        </div>
+                        <div class="mt-2">
+                          <img
+                            src="assets/img/services-4.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="domain-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Small Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Domains"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Get Your Custom Domain With"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >li</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Godaddy"
+                      />
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Hosting"
+                      />
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Amazon"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Update image</label
+                      >
+                      <input
+                        type="file"
+                        class="form-control trending-heading fw-normal mt-2"
+                      />
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mt-4">
+                        <img
+                          src="assets/img/domains-right.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="website-creation-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="The AI Edge in E-Commerce Website Building with Odoo"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control trending-heading fw-normal mt-2"
+                        rows="6"
+                      >
+AI has evolved remarkably over the past decade, now excelling in complex e-commerce website development through platforms like Odoo. This fusion delivers unmatched efficiency and customization by automating tasks and analyzing user behavior. Odoo’s AI-driven platform also features a scheduling calendar and integrates premium visuals, elevating both functionality and design.
+                    </textarea
+                      >
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Update image</label
+                          >
+                          <input
+                            type="file"
+                            class="form-control trending-heading fw-normal mt-2"
+                          />
+                        </div>
+                        <img
+                          src="assets/img/website-creation.png"
+                          alt=""
+                          class="img-fluid mt-3"
+                        />
+                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="about-us-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Small Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="About Us"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Our Company Overview"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control trending-heading fw-normal mt-2"
+                        rows="6"
+                      >
+ODDO brand is one of the most reliable motor oil manufacturers, which is engaged in the production of high quality products with a history of more than decades in the industry. In order to get more information about other aspects and products of the ODDO brand, you can use the following buttons:
+                      </textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Company Tab</label
+                          >
+                          <textarea
+                            class="form-control trending-heading fw-normal mt-2"
+                            rows="7"
+                          >
+ODDO brand is one of the most reliable motor oil manufacturers, which is engaged in the production of high quality products with a history of more than decades in the industry. In order to get more information about other aspects and products of the ODDO brand, you can use the following buttons:
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Product Tab</label
+                          >
+                          <textarea
+                            class="form-control trending-heading fw-normal mt-2"
+                            rows="7"
+                          >
+ODDO brand is one of the most reliable motor oil manufacturers, which is engaged in the production of high quality products with a history of more than decades in the industry. In order to get more information about other aspects and products of the ODDO brand, you can use the following buttons:
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Our Team Tab</label
+                          >
+                          <textarea
+                            class="form-control trending-heading fw-normal mt-2"
+                            rows="7"
+                          >
+ODDO brand is one of the most reliable motor oil manufacturers, which is engaged in the production of high quality products with a history of more than decades in the industry. In order to get more information about other aspects and products of the ODDO brand, you can use the following buttons:
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Update image</label
+                          >
+                          <input
+                            type="file"
+                            class="form-control trending-heading fw-normal mt-2"
+                          />
+                        </div>
+                        <img
+                          src="assets/img/about.png"
+                          alt=""
+                          class="img-fluid mt-3"
+                        />
+                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="privacy-policy-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Our Privacy policy"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control trending-heading fw-normal mt-2"
+                        rows="6"
+                      >
+At [Store Name], we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you visit our website and make purchases.
+                      </textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mt-3">
                         <div class="form-group">
                           <label
                             for="exampleFormControlSelect1"
                             class="trending-heading"
-                            >First Name</label
+                            >Update image</label
                           >
                           <input
-                            type="text"
+                            type="file"
                             class="form-control trending-heading fw-normal mt-2"
-                            value="Mona"
                           />
                         </div>
+                        <img
+                          src="assets/img/privacy-policy.png"
+                          alt=""
+                          class="img-fluid mt-3"
+                        />
                       </div>
-                      <div class="col-md-6 mt-3 mt-md-0">
-                        <div class="form-group fw-bold">
-                          <label
-                            for="exampleFormControlSelect1"
-                            class="trending-heading"
-                            >Last Name</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control trending-heading fw-normal mt-2"
-                            value="Lisa"
-                          />
-                        </div>
-                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="contact-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="row">
                       <div class="col-md-6 mt-3">
-                        <div class="form-group fw-bold">
-                          <label
-                            for="exampleFormControlSelect1"
-                            class="trending-heading"
-                            >Username</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control trending-heading fw-normal mt-2"
-                            value="@MonaLissa"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-group fw-bold">
-                          <label
-                            for="exampleFormControlSelect1"
-                            class="trending-heading"
-                            >Date of birth</label
-                          >
-                          <input
-                            type="date"
-                            class="form-control trending-heading fw-normal mt-2"
-                            value="@MonaLissa"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-group fw-bold">
-                          <label
-                            for="exampleFormControlSelect1"
-                            class="trending-heading"
-                            >Email</label
-                          >
-                          <input
-                            type="email"
-                            class="form-control trending-heading fw-normal mt-2"
-                            value="example@mail.com"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-group fw-bold">
+                        <div class="form-group mt-3">
                           <label
                             for="exampleFormControlSelect1"
                             class="trending-heading"
@@ -341,92 +854,497 @@
                           <input
                             type="tel"
                             class="form-control trending-heading fw-normal mt-2"
-                            value="+123-456-789"
+                            value="+1012 3456 789"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Email Address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="demo@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Location</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="Kirachi"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Twitch Link</label
+                          >
+                          <input
+                            type="url"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="https:/"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Instagram Link</label
+                          >
+                          <input
+                            type="url"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="https:/"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group mt-3">
+                          <label
+                            for="exampleFormControlSelect1"
+                            class="trending-heading"
+                            >Twitter Link</label
+                          >
+                          <input
+                            type="url"
+                            class="form-control trending-heading fw-normal mt-2"
+                            value="https:/"
                           />
                         </div>
                       </div>
                     </div>
-                    <button class="btn appointment-btn text-white mt-3">
+                    <button class="btn appointment-btn text-white mt-4">
                       update
                     </button>
                   </div>
                 </div>
               </div>
-
-              <div id="Change-password" class="tabcontent">
-                <div class="card rounded-3 border-0 card-shadow h-100 p-3 mt-4">
-                  <div class="card-body h-100">
+              <div id="stop-writting-code-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Stop Writing Codes Manually. Made Your Ecommerce Store with Odoo"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control trending-heading fw-normal mt-2"
+                        rows="6"
+                      >
+Embark on your e-commerce journey with Odoo's AI-powered website builder. Whether you're launching a new online store, expanding your business, or enhancing your digital presence, Odoo is your go-to platform, ready to bring your vision to life.
+                      </textarea>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="pricing-hero-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Main Heading</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control trending-heading fw-normal mt-2"
+                        value="Pricing Of Ecommerce Store with Odoo"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="trending-heading"
+                        >Description</label
+                      >
+                      <textarea
+                        class="form-control trending-heading fw-normal mt-2"
+                        rows="6"
+                      >
+Harness the potential of Big Data Analytics & Cloud Services and become a data-drive In the journey of turning dreams into digital realities, we recognize the evolving nature of your digital needs in organization with Needle tail
+                      </textarea>
+                    </div>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group fw-bold">
+                      <div class="col-md-6 mt-3">
+                        <div class="form-group">
                           <label
                             for="exampleFormControlSelect1"
                             class="trending-heading"
-                            >Current Password</label
+                            >Update image</label
                           >
-                          <div class="password-container mt-2">
+                          <input
+                            type="file"
+                            class="form-control trending-heading fw-normal mt-2"
+                          />
+                        </div>
+                        <div class="mt-4">
+                          <img
+                            src="assets/img/privacy-hero.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="pricing-plan-section" class="tabcontent">
+                <div class="card rounded-3 border-0 card-shadow h-100 p-3">
+                  <div class="card-body">
+                    <div class="border-bottom pb-4">
+                      <h3 class="heading text-center fs-1">Starter Plan</h3>
+                      <div class="row">
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Main Heading</label
+                            >
                             <input
-                              type="password"
-                              class="form-control trending-heading fw-normal"
-                              value="password"
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Stater"
                             />
-                            <img
-                              src="dashasset/img/profile-changed-password.svg"
-                              class="password-toggle pe-2"
-                              onclick="togglePasswordVisibility(this)"
-                              alt=""
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Description</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Quick video message"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >li</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Up to 50 Creators Lite"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Up to 25 videos/person"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Up to 5 mins/video"
+                            />
+                          </div>
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Plan Price</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Free"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Key Features</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Screen recording & cam bubble"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Instant editing"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Unlimited transcriptions"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Privacy controls"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Viewer insights"
                             />
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6 mt-3">
-                        <div class="form-group fw-bold">
-                          <label
-                            for="exampleFormControlSelect1"
-                            class="trending-heading"
-                            >New Password</label
-                          >
-                          <div class="password-container mt-2">
+                    <div class="border-bottom mt-4 pb-4">
+                      <h3 class="heading text-center fs-1 m-0">
+                        Business Plan
+                      </h3>
+                      <div class="row">
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Main Heading</label
+                            >
                             <input
-                              type="password"
-                              class="form-control trending-heading fw-normal"
-                              value="new password"
-                            />
-                            <img
-                              src="dashasset/img/profile-changed-password.svg"
-                              class="password-toggle pe-2"
-                              onclick="togglePasswordVisibility(this)"
-                              alt=""
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Business"
                             />
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-group fw-bold">
-                          <label
-                            for="exampleFormControlSelect1"
-                            class="trending-heading"
-                            >Confirm Password</label
-                          >
-                          <div class="password-container mt-2">
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Description</label
+                            >
                             <input
-                              type="password"
-                              class="form-control trending-heading fw-normal"
-                              value="Confirm password"
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Advanced recording & analytics"
                             />
-                            <img
-                              src="dashasset/img/profile-changed-password.svg"
-                              class="password-toggle pe-2"
-                              onclick="togglePasswordVisibility(this)"
-                              alt=""
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >li</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Unlimited Creators "
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Unlimited videos"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Unlimited recording length"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Up to 50 Creators Lite"
+                            />
+                          </div>
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Plan Price</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="$12.50 USD/Creator/mo (annually)"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Key Features</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Custom branding"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Engagement insights"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Embed links in video"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Password protected videos"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Video upload"
                             />
                           </div>
                         </div>
                       </div>
                     </div>
-                    <button class="btn appointment-btn text-white mt-3">
+                    <div class="border-bottom pb-4 mt-4">
+                      <h3 class="heading text-center fs-1">Enterprise Plan</h3>
+                      <div class="row">
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Main Heading</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Enterprise"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Description</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Advanced admin & security"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >li</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Unlimited Members"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Unlimited Videos"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Unlimited recording length"
+                            />
+                          </div>
+                          <div class="form-group mt-3">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Plan Price</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Let's Talk"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-group">
+                            <label
+                              for="exampleFormControlSelect1"
+                              class="trending-heading"
+                              >Key Features</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="SSO (SAML) and SCIM"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Advanced content privacy"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Custom data retention policies"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Salesforce integration"
+                            />
+                            <input
+                              type="text"
+                              class="form-control trending-heading fw-normal mt-2"
+                              value="Zoom integration"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn appointment-btn text-white mt-4">
                       update
                     </button>
                   </div>
@@ -446,6 +1364,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script> -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Template Javascript -->
     <script src="dashasset/js/main.js"></script>
@@ -466,17 +1386,6 @@
 
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
-    </script>
-
-    <script>
-      function togglePasswordVisibility(toggleBtn) {
-        var passwordInput = toggleBtn.previousElementSibling;
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-        } else {
-          passwordInput.type = "password";
-        }
-      }
     </script>
   </body>
 </html>
