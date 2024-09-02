@@ -33,6 +33,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .step {
+        display: none;
+      }
+
+      .step.active {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header class="home-header">
@@ -254,7 +263,14 @@
     </footer>
     <!-- End Footer -->
 
-    <script>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script>
       let currentStep = 0;
 
       function showStep(step) {
@@ -295,14 +311,49 @@
       document.addEventListener("DOMContentLoaded", () => {
         showStep(currentStep);
       });
-    </script>
+    </script> -->
 
-    <script src="assets/js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      let currentStep = 0;
+
+      function showStep(step) {
+        const steps = document.querySelectorAll(".step");
+        steps.forEach((stepElement, index) => {
+          stepElement.classList.toggle("active", index === step);
+        });
+      }
+
+      function nextStep() {
+        const steps = document.querySelectorAll(".step");
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      }
+
+      function prevStep() {
+        if (currentStep > 0) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      }
+
+      function submitForm() {
+        const businessName = document.getElementById("businessName").value;
+        const phoneNo = document.getElementById("phoneNo").value;
+        const email = document.getElementById("email").value;
+        const confirmDetails = document.getElementById("confirmDetails");
+        confirmDetails.innerHTML = `
+    <p>Business Name: ${businessName}</p>
+    <p>Phone No: ${phoneNo}</p>
+    <p>Email: ${email}</p>
+  `;
+        alert("Form submitted successfully!");
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showStep(currentStep);
+      });
+    </script>
   </body>
 </html>
