@@ -27,7 +27,7 @@ body {
     height: 100vh;
 }
 
-.hero-bg{
+.hero-bg {
     background: #d5d3d4;
 }
 
@@ -181,7 +181,7 @@ TEMPLATE 02 CSS
     font-weight: 500;
 }
 
-.qty-border{
+.qty-border {
     border: 1px solid rgba(138, 138, 138, 1) !important;
 }
 
@@ -193,7 +193,7 @@ TEMPLATE 02 CSS
     background: rgba(151, 151, 151, 1);
 }
 
-.input-bg{
+.input-bg {
     background: rgba(217, 217, 217, 1);
 }
 
@@ -244,12 +244,54 @@ TEMPLATE 02 CSS
 /*******************************
 Ecommerce Template
 *******************************/
-.why-choose-card{
-    background: rgb(38, 46, 119);
+.navbar-3 {
+    /* background: #ffa5b6; */
+    /* background: #ff94a8; */
+    background: #ff94a8a8;
 }
 
-.e-commerce-footer{
+.e-commerce-bg {
+    /* background: url(/assets/img/ecommerce/e-commerce-bg-3.jpg); */
+    /* background: url(/assets/img/ecommerce/ecommerce-4.jpg); */
+    background: url(/assets/img/ecommerce/ecommerce-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why-choose-card {
+    /* background: rgb(38, 46, 119); */
+    background: #ffa5b6;
+}
+
+.e-commerce-footer {
     background: rgb(38, 36, 36);
+}
+
+.pink-txtcolor {
+    color: #f7444e;
+}
+
+.viewall-btn {
+    background: #f7444e;
+}
+
+.viewall-btn:hover {
+    background: #f7444e;
+}
+
+.lightpink-bg{
+    background: #ff8ca18a;
+}
+
+.pink-bg{
+    background: #ff94a8;
+}
+
+@media(min-width:700px) {
+    .input-width {
+        margin: 0 120px !important;
+    }
 }
 
 @media(max-width: 768px) {
@@ -297,6 +339,10 @@ Ecommerce Template
 
     .main-heading {
         font-size: 34px;
+    }
+
+    .heading {
+        font-size: 45px;
     }
 
     .carousel-arrow-left {
