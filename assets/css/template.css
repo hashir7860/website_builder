@@ -264,12 +264,20 @@ Ecommerce Template
     background: #ffa5b6;
 }
 
+.brown-txtcolor {
+    color: #c14448;
+}
+
+.brown-border {
+    border: 1px solid #c14448;
+}
+
 .e-commerce-footer {
     background: rgb(38, 36, 36);
 }
 
 .pink-txtcolor {
-    color: #f7444e;
+    color: #f7444db2;
 }
 
 .viewall-btn {
@@ -280,12 +288,101 @@ Ecommerce Template
     background: #f7444e;
 }
 
-.lightpink-bg{
+.add-to-cart-btn {
+    background: #c14448;
+}
+
+.add-to-cart-btn:hover {
+    background: #c14448;
+}
+
+.lightpink-bg {
     background: #ff8ca18a;
 }
 
-.pink-bg{
+.lightbrown-bg {
+    background: #c14448;
+}
+
+.pink-bg {
     background: #ff94a8;
+}
+
+.skyblue-bg {
+    background: #EDF1FF;
+}
+
+.carousel-img {
+    height: 75vh;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.img-box {
+    overflow: hidden;
+}
+
+.img-box img {
+    transition: all 1s ease;
+}
+
+.img-box img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.arrival-img {
+    height: 60vh;
+    object-fit: contain;
+}
+
+.qty-input {
+    width: 50px;
+    text-align: center;
+    background: rgba(237, 242, 246, 1);
+    height: 32px;
+}
+
+.qty-minus-btn {
+    background: #c14448;
+    color: white;
+    align-items: center;
+    border-radius: 4px 0 0 4px;
+    height: 32px;
+}
+
+.qty-minus-btn:hover {
+    background: #c14448;
+    color: white;
+}
+
+.qty-plus-btn {
+    background: #c14448;
+    color: white;
+    align-items: center;
+    border-radius: 0 4px 4px 0;
+    height: 32px;
+}
+
+.qty-plus-btn:hover {
+    background: #c14448;
+    color: white;
+}
+
+.hover-content {
+    transition: all 0.5s;
+    display: none;
+}
+
+.product-card:hover .hover-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    bottom: 40px;
+    width: 100%;
+    display: block;
+    /* opacity: 1; */
+    /* visibility: hidden; */
+    transition: all 0.5s;
 }
 
 @media(min-width:700px) {

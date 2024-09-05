@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ecommerce - Checkout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/template.css" />
+  </head>
+  <body class="bg-white">
+    <div class="container-fluid skyblue-bg">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-3 d-none d-lg-block my-3">
+            <a href="#" class="text-decoration-none"
+              ><img
+                src="assets/img/template-images/LOGO-2.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-6 col-6 my-3">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control description py-2 rounded-0"
+                placeholder="Search for product"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text rounded-0" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass mx-3"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 my-3 text-end">
+            <div class="d-flex justify-content-end gap-2">
+              <button class="btn border rounded-0">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="description ms-1">0</span>
+              </button>
+              <button class="btn border rounded-0">
+                <i class="fa-solid fa-heart"></i>
+                <span class="description ms-1">2</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="home-header">
+      <nav
+        class="navbar bg-transparent border px-0 navbar-3 py-1 py-lg-0 navbar-expand-lg"
+      >
+        <div class="container-fluid px-4">
+          <div class="dropdown d-none d-lg-block">
+            <button
+              class="btn border-0 description rounded-0 fw-bold fs-5"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+              style="background: #eb1219; width: 36vh"
+            >
+              Categories <i class="bi bi-chevron-down ms-2"></i>
+            </button>
+            <ul
+              class="dropdown-menu mt-3 border-top-0 rounded-0 description fs-5"
+              style="
+                position: absolute;
+                inset: 0px auto auto 0px;
+                margin: 0px;
+                transform: translate(0px, 40px);
+                width: 228px;
+              "
+              data-popper-placement="bottom-start"
+            >
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Diet Nutrition</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Vegetables</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Fruits</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Shoes</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Clothes</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Watches</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Mobile Phones</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Laptop</a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item" href="#">Tablets</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Accessories</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="text-decoration-none d-block d-lg-none"
+            ><img
+              src="assets/img/template-images/LOGO-2.png"
+              alt=""
+              class="img-fluid"
+          /></a>
+
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="navbar-nav d-flex align-items-center gap-3 right-dropdown-profile"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="navbar-nav ms-0 ms-lg-auto d-flex align-items-center gap-3 right-dropdown-profile"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="skyblue-bg py-5">
+      <div
+        class="container-fluid text-center d-flex justify-content-center align-items-center py-5"
+      >
+        <div>
+          <h2 class="subheading fw-bold fs-1 m-0">Checkout</h2>
+          <p class="description m-0 mt-3">
+            <a
+              href="ecommercetemplatehome-2.html"
+              class="text-decoration-none brown-txtcolor"
+              >Home</a
+            >
+            - Checkout
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End hero section -->
+
+    <!-- Contact section -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mt-3">
+            <h3 class="subheading fw-bold">Biling address</h3>
+            <div class="row">
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect1"
+                    class="mb-1 description fw-bold"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="John"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect2"
+                    class="mb-1 description fw-bold"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Doe"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput2"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect3"
+                    class="mb-1 description fw-bold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="example@mail.com"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput3"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect4"
+                    class="mb-1 description fw-bold"
+                    >Phone No.</label
+                  >
+                  <input
+                    type="tel"
+                    placeholder="+1-22-365-489"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput3"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect4"
+                    class="mb-1 description fw-bold"
+                    >Country</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter your country"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput3"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect4"
+                    class="mb-1 description fw-bold"
+                    >City</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter your city"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput3"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect4"
+                    class="mb-1 description fw-bold"
+                    >State</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter your state"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput3"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect4"
+                    class="mb-1 description fw-bold"
+                    >Zip Code</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter your zip code"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput3"
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label
+                  for="exampleFormControlSelect4"
+                  class="mb-1 description fw-bold"
+                  >Address</label
+                >
+                <input
+                  type="text"
+                  placeholder="Your complete address"
+                  class="form-control description rounded-0"
+                  id="exampleFormControlInput3"
+                />
+              </div>
+              <div class="form-group mt-3">
+                <label
+                  for="exampleFormControlSelect4"
+                  class="mb-1 description fw-bold"
+                  >Bank Card Number</label
+                >
+                <input
+                  type="text"
+                  placeholder="4242 4242 4242 4242"
+                  class="form-control description rounded-0"
+                  id="exampleFormControlInput3"
+                />
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect1"
+                    class="mb-1 description fw-bold"
+                    >Card Type</label
+                  >
+                  <select
+                    class="form-control form-select description"
+                    aria-label="Default select example"
+                    id="exampleFormControlSelect1"
+                  >
+                    <option>Master card</option>
+                    <option>Visa card</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="form-group">
+                  <label
+                    for="exampleFormControlSelect4"
+                    class="mb-1 description fw-bold"
+                    >CVV</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="454"
+                    class="form-control description rounded-0"
+                    id="exampleFormControlInput3"
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label class="mb-1 description fw-bold"
+                  >Additional Information</label
+                >
+                <textarea
+                  class="form-control description rounded-0"
+                  rows="5"
+                  placeholder="Order Notes"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card rounded-0">
+              <div class="card-header skyblue-bg">
+                <h3 class="subheading fw-bold m-0">Order Detail</h3>
+              </div>
+              <div class="card-body">
+                <div class="border-bottom pb-3">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h2 class="description">Full Sleeve Zipper</h2>
+                    </div>
+                    <h2 class="description">$99</h2>
+                  </div>
+                  <div class="d-flex justify-content-between mt-2">
+                    <div>
+                      <h2 class="description">Full Sleeve Zipper</h2>
+                    </div>
+                    <h2 class="description">$99</h2>
+                  </div>
+                  <div class="d-flex justify-content-between mt-2">
+                    <div>
+                      <h2 class="description">Full Sleeve Zipper</h2>
+                    </div>
+                    <h2 class="description">$99</h2>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <h2 class="description fw-bold">Subtotal</h2>
+                  </div>
+                  <h2 class="description fw-bold">$99</h2>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <h2 class="description fw-bold">Shipping</h2>
+                  </div>
+                  <h2 class="description fw-bold">$99</h2>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <h2 class="subheading fw-bold">Total</h2>
+                  </div>
+                  <h2 class="subheading fw-bold">$99</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End contact section -->
+
+    <!-- footer section -->
+    <footer class="lightbrown-bg mt-5">
+      <div class="footer-top py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-3">
+              <a href="ecommercetemplatehome.html" class="text-decoration-none"
+                ><img
+                  src="assets/img/template-images/e-commerce-white-logo.png"
+                  alt=""
+                  class="img-fluid mb-3"
+              /></a>
+              <p class="description text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                labore iure quis animi totam debitis porro, quam doloribus
+                veniam atque enim incidunt accusantium commodi minus harum vero
+                beatae dolor ullam!
+              </p>
+            </div>
+            <div class="col-md-2 col-6 mt-3">
+              <div>
+                <h4 class="description mb-3 text-white">Useful Links</h4>
+                <ul class="list-unstyled description text-white">
+                  <li>
+                    <a
+                      href="ecommercetemplatehome.html"
+                      class="text-decoration-none text-white"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      href="ecommercetemplateabout.html"
+                      class="text-decoration-none text-white"
+                      >About</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      href="ecommercetemplateproduct.html"
+                      class="text-decoration-none text-white"
+                      >Product</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      href="ecommercetemplatecontact.html"
+                      class="text-decoration-none text-white"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 mt-3">
+              <div>
+                <h4 class="description mb-3 text-white">Categories</h4>
+                <ul class="list-unstyled description">
+                  <li>
+                    <a href="#" class="text-decoration-none text-white"
+                      >Clothing</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Accessories</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Vegetables</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Shoes</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <h4
+                class="description mb-3 text-center text-md-start text-white fw-bold"
+              >
+                Subscribe to our Newsletter
+              </h4>
+              <div class="d-flex align-items-center">
+                <input
+                  type="text"
+                  placeholder="Subscribe to our Newsletter"
+                  class="form-control description rounded-start-5 rounded-end-0"
+                />
+                <div class="text-center">
+                  <button
+                    class="btn viewall-btn fw-normal text-white rounded-end-5 rounded-start-0"
+                  >
+                    SUBSCRIBE
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justif gap-2 mt-3">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    src="assets/img/ecommerce/footer-facebook.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <img
+                    src="assets/img/ecommerce/footer-insta.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <img
+                    src="assets/img/ecommerce/footer-linkedin.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <img
+                    src="assets/img/ecommerce/footer-twitter.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
