@@ -25,32 +25,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/template.css" />
-    <style> 
-      .nav-pills .nav-link.active {
-        border: 1px solid rgba(94, 94, 94, 1);
-        background: none;
-        color: black;
-      }
-
-      .nav-pills .nav-link {
-        color: rgba(94, 94, 94, 1);
-        background: none;
-        border: 1px solid rgba(163, 163, 163, 1);
-        width: 103px;
-      }
-    </style>
   </head>
   <body>
     <header class="home-header">
       <nav
-        class="container-fluid navbar navbar-2 fixed-top navbar-expand-lg py-3"
+        class="container-fluid navbar fixed-top navbar-expand-lg py-lg-3 py-2"
+        style="background: rgba(248, 248, 248, 1)"
       >
-        <div class="container">
-          <a class="navbar-brand d-none d-lg-block" href="templateabout.html">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="templateabout.html">
             <img
-              src="assets/img/template-images/svg-logo.svg"
+              src="assets/img/template-images/logo.png"
               alt=""
-              class="img-fluid"
+              class="img-fluid logo"
             />
           </a>
           <button
@@ -65,81 +52,52 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="#">CATEGORIES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">COLLECTIONS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">NEW</a>
+                <a class="nav-link" href="#">NEW ARRIVALS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
               </li>
             </ul>
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-              <li class="nav-item pe-0 m-0">
-                <a class="nav-link" href="#"
-                  ><img src="assets/img/template-images/wishlist.png" alt=""
-                /></a>
-              </li>
-              <li class="nav-item pe-0 m-0">
-                <a class="nav-link" href="#">
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <button
-                        class="btn fw-light btn-dark rounded-5 text-white py-2 px-4"
-                      >
-                        Cart
-                      </button>
-                    </div>
-                    <div>
-                      <img
-                        src="assets/img/template-images/add-to-cart.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item pe-0">
-                <a class="nav-link" href="#"
-                  ><img src="assets/img/template-images/user.png" alt=""
-                /></a>
-              </li>
-            </ul>
+            <div class="d-flex gap-4 justify-content-center align-items-center">
+              <a class="nav-link" href="#"
+                ><img src="assets/img/template-images/search.svg" alt=""
+              /></a>
+              <a class="nav-link" href="#"
+                ><img src="assets/img/template-images/shopping-cart.svg" alt=""
+              /></a>
+              <a class="nav-link" href="#"
+                ><img src="assets/img/template-images/user.svg" alt=""
+              /></a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="my-5 py-5">
+    <!-- Hero section -->
+    <section class="d-flex align-items-center mt-5">
+      <div
+        class="container d-flex justify-content-center align-items-center mt-5 shop-hero text-center"
+      >
+        <h1 class="heading text-white">Shop</h1>
+      </div>
+    </section>
+    <!-- End hero section -->
+
+    <section class="my-5">
       <div class="container mt-5">
         <div class="row">
           <div class="col-lg-3 col-md-4 ps-3 ps-lg-0 mt-3">
             <h3 class="label fw-bold">Filters</h3>
             <div class="mt-4">
-              <h3 class="label fw-bold">Size</h3>
-              <div class="d-flex gap-1 flex-wrap mt-3 border-bottom pb-3">
-                <button class="btn rounded-0 fw-bold border border-dark">
-                  XS
-                </button>
-                <button class="btn rounded-0 fw-bold border border-dark">
-                  S
-                </button>
-                <button class="btn rounded-0 fw-bold border border-dark">
-                  M
-                </button>
-                <button class="btn rounded-0 fw-bold border border-dark">
-                  L
-                </button>
-                <button class="btn rounded-0 fw-bold border border-dark">
-                  XL
-                </button>
-                <button class="btn rounded-0 fw-bold border border-dark">
-                  2X
-                </button>
-              </div>
               <div class="accordion" id="accordionExample">
                 <div
                   class="accordion-item border-0 border-bottom mt-1 rounded-0"
@@ -257,69 +215,15 @@
                       class="accordion-button collapsed label fw-bold rounded-4 px-0"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
+                      data-bs-target="#collapseFour"
                       aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Colors
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body poppin-description fs-6 pt-0">
-                      <div
-                        class="form-check poppin-description d-flex align-items-center gap-2"
-                      >
-                        <input
-                          class="form-check-input fs-4 mb-2"
-                          type="checkbox"
-                          value=""
-                          id="availability"
-                        />
-                        <label class="form-check-label" for="availability">
-                          Availability (<span
-                            class="darkpurple-txtcolor fw-bold"
-                            >450</span
-                          >)
-                        </label>
-                      </div>
-                      <div
-                        class="form-check poppin-description d-flex align-items-center gap-2"
-                      >
-                        <input
-                          class="form-check-input fs-4 mb-2"
-                          type="checkbox"
-                          value=""
-                          id="out-of-stock"
-                        />
-                        <label class="form-check-label" for="out-of-stock">
-                          Out of stock (<span
-                            class="darkpurple-txtcolor fw-bold"
-                            >18</span
-                          >)
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 border-bottom rounded-0">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed label fw-bold rounded-4 px-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
+                      aria-controls="collapseFour"
                     >
                       Prince Range
                     </button>
                   </h2>
                   <div
-                    id="collapseTwo"
+                    id="collapseFour"
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionExample"
                   >
@@ -365,123 +269,15 @@
                       class="accordion-button collapsed label fw-bold rounded-4 px-0"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
+                      data-bs-target="#collapseSeven"
                       aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Collections
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body poppin-description fs-6 pt-0">
-                      <div
-                        class="form-check poppin-description d-flex align-items-center gap-2"
-                      >
-                        <input
-                          class="form-check-input fs-4 mb-2"
-                          type="checkbox"
-                          value=""
-                          id="availability"
-                        />
-                        <label class="form-check-label" for="availability">
-                          Availability (<span
-                            class="darkpurple-txtcolor fw-bold"
-                            >450</span
-                          >)
-                        </label>
-                      </div>
-                      <div
-                        class="form-check poppin-description d-flex align-items-center gap-2"
-                      >
-                        <input
-                          class="form-check-input fs-4 mb-2"
-                          type="checkbox"
-                          value=""
-                          id="out-of-stock"
-                        />
-                        <label class="form-check-label" for="out-of-stock">
-                          Out of stock (<span
-                            class="darkpurple-txtcolor fw-bold"
-                            >18</span
-                          >)
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 border-bottom rounded-0">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed label fw-bold rounded-4 px-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Tags
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body poppin-description fs-6 pt-0">
-                      <div
-                        class="form-check poppin-description d-flex align-items-center gap-2"
-                      >
-                        <input
-                          class="form-check-input fs-4 mb-2"
-                          type="checkbox"
-                          value=""
-                          id="availability"
-                        />
-                        <label class="form-check-label" for="availability">
-                          Availability (<span
-                            class="darkpurple-txtcolor fw-bold"
-                            >450</span
-                          >)
-                        </label>
-                      </div>
-                      <div
-                        class="form-check poppin-description d-flex align-items-center gap-2"
-                      >
-                        <input
-                          class="form-check-input fs-4 mb-2"
-                          type="checkbox"
-                          value=""
-                          id="out-of-stock"
-                        />
-                        <label class="form-check-label" for="out-of-stock">
-                          Out of stock (<span
-                            class="darkpurple-txtcolor fw-bold"
-                            >18</span
-                          >)
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 border-bottom rounded-0">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed label fw-bold rounded-4 px-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
+                      aria-controls="collapseSeven"
                     >
                       Ratings
                     </button>
                   </h2>
                   <div
-                    id="collapseTwo"
+                    id="collapseSeven"
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionExample"
                   >
@@ -525,1100 +321,141 @@
             </div>
           </div>
           <div class="col-lg-9 col-md-8 mt-3">
-            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
-              <a
-                href="#"
-                class="poppin-description text-decoration-none text-secondary fs-6"
-                ><span></span>Home</a
-              >
-              <a
-                href="#"
-                class="description text-decoration-none text-secondary fs-6 fw-bold"
-                ><span><span class="fw-bold">/</span> </span>Products</a
-              >
-            </div>
             <h3 class="poppin-subheading mt-4">PRODUCTS</h3>
-            <div class="row align-items-center">
+            <div class="input-search position-relative w-100">
+              <input
+                type="search"
+                class="form-control ps-5 p-3 rounded-1 label bg-transparent"
+                placeholder="UI/ UX Design"
+              />
+              <span class="fa fa-search search-icon text-secondary ms-2"></span>
+            </div>
+            <div class="row">
               <div class="col-md-4 mt-3">
-                <div class="input-search position-relative w-100">
-                  <input
-                    type="search"
-                    class="form-control ps-5 p-3 rounded-1 border-0 label input-bg"
-                    placeholder="UI/ UX Design"
-                  />
-                  <span
-                    class="fa fa-search search-icon text-secondary ms-2"
-                  ></span>
-                </div>
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="card bg-transparent border-0">
+                    <div class="card-body p-0 text-center">
+                      <img
+                        src="assets/img/template-images/shop1.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-footer bg-transparent border-0 mt-2 px-0">
+                      <p class="label m-0">Cotton T Shirt</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
+                        <p class="label fw-bold">$199</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-7 mt-3">
-                <div>
-                  <ul
-                    class="nav nav-pills mb-3 justify-content-center"
-                    id="pills-tab"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active btn btn-2 rounded-0 fw-bold me-2"
-                        id="pills-new-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-new"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-new"
-                        aria-selected="true"
-                      >
-                        New
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link btn btn-2 rounded-0 fw-bold me-2"
-                        id="pills-shirts-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-shirts"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-shirts"
-                        aria-selected="false"
-                      >
-                        Shirts
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link btn btn-2 rounded-0 fw-bold me-2"
-                        id="pills-polo-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-polo"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-polo"
-                        aria-selected="false"
-                      >
-                        Polo Shirts
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link btn btn-2 rounded-0 fw-bold me-2"
-                        id="pills-shorts-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-shorts"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-shorts"
-                        aria-selected="false"
-                      >
-                        Shorts
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link btn btn-2 rounded-0 fw-bold me-2 mt-1"
-                        id="pills-sellers-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-sellers"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-sellers"
-                        aria-selected="false"
-                      >
-                        Best Sellers
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link btn btn-2 rounded-0 fw-bold me-2 mt-1"
-                        id="pills-tshirts-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-tshirts"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-tshirts"
-                        aria-selected="false"
-                      >
-                        T-Shirts
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link btn btn-2 rounded-0 fw-bold me-2 mt-1"
-                        id="pills-jeans-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-jeans"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-jeans"
-                        aria-selected="false"
-                      >
-                        Jeans
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link btn btn-2 rounded-0 fw-bold me-2 mt-1"
-                        id="pills-jackets-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-jackets"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-jackets"
-                        aria-selected="false"
-                      >
-                        Jackets
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+              <div class="col-md-4 mt-3">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="card bg-transparent border-0">
+                    <div class="card-body p-0 text-center">
+                      <img
+                        src="assets/img/template-images/shop2.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-footer bg-transparent border-0 mt-2 px-0">
+                      <p class="label m-0">Cotton T Shirt</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
+                        <p class="label fw-bold">$199</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mt-3">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="card bg-transparent border-0">
+                    <div class="card-body p-0 text-center">
+                      <img
+                        src="assets/img/template-images/shop3.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-footer bg-transparent border-0 mt-2 px-0">
+                      <p class="label m-0">Cotton T Shirt</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
+                        <p class="label fw-bold">$199</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mt-3">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="card bg-transparent border-0">
+                    <div class="card-body p-0 text-center">
+                      <img
+                        src="assets/img/template-images/shop1.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-footer bg-transparent border-0 mt-2 px-0">
+                      <p class="label m-0">Cotton T Shirt</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
+                        <p class="label fw-bold">$199</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mt-3">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="card bg-transparent border-0">
+                    <div class="card-body p-0 text-center">
+                      <img
+                        src="assets/img/template-images/shop3.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-footer bg-transparent border-0 mt-2 px-0">
+                      <p class="label m-0">Cotton T Shirt</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
+                        <p class="label fw-bold">$199</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mt-3">
+                <a href="#" class="text-decoration-none text-dark">
+                  <div class="card bg-transparent border-0">
+                    <div class="card-body p-0 text-center">
+                      <img
+                        src="assets/img/template-images/shop2.png"
+                        alt=""
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-footer bg-transparent border-0 mt-2 px-0">
+                      <p class="label m-0">Cotton T Shirt</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
+                        <p class="label fw-bold">$199</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-            <div class="tab-content" id="pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="pills-new"
-                role="tabpanel"
-                aria-labelledby="pills-new-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-shirts"
-                role="tabpanel"
-                aria-labelledby="pills-shirts-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-polo"
-                role="tabpanel"
-                aria-labelledby="pills-polo-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-shorts"
-                role="tabpanel"
-                aria-labelledby="pills-shorts-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-sellers"
-                role="tabpanel"
-                aria-labelledby="pills-sellers-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-tshirts"
-                role="tabpanel"
-                aria-labelledby="pills-tshirts-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-jeans"
-                role="tabpanel"
-                aria-labelledby="pills-jeans-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-jackets"
-                role="tabpanel"
-                aria-labelledby="pills-jackets-tab"
-                tabindex="0"
-              >
-                <div class="row">
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Crewneck T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Heavy Weight T-shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Full Sleeve Zipper</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop2.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop3.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-3">
-                    <div class="card bg-transparent border-0">
-                      <div class="card-body p-0 text-center">
-                        <img
-                          src="assets/img/template-images/shop1.png"
-                          alt=""
-                          class="img-fluid w-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 mt-2">
-                      <p class="label m-0">Cotton T Shirt</p>
-                      <div class="d-flex justify-content-between">
-                        <p class="label fw-bold">Basic Slim Fit T-Shirt</p>
-                        <p class="label fw-bold">$199</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="text-center mt-4">
+              <button class="btn btn-dark rounded-0 fw-normal">
+                Load More
+              </button>
             </div>
           </div>
         </div>
@@ -1626,28 +463,65 @@
     </section>
 
     <!-- footer section -->
-    <footer id="footer" class="py-5 footer-2">
+    <footer id="footer" class="py-5">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-md-3 col-6 mt-3">
             <ul class="subheading fw-light list-unstyled fs-5">
-              <h4 class="subheading mb-3 text-secondary">Info</h4>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contacts</a></li>
-            </ul>
-            <ul class="subheading fw-light list-unstyled fs-5 mt-5">
-              <h4 class="subheading mb-3 text-secondary">Languages</h4>
-              <li><a href="#">ENG</a></li>
-              <li><a href="#">ESP</a></li>
-              <li><a href="#">SVE</a></li>
+              <h4 class="subheading fw-bold mb-3">RESOURCES</h4>
+              <li><a href="#">CATEGORIES</a></li>
+              <li><a href="#">COLLECTION</a></li>
+              <li><a href="#">NEW ARRIVAL</a></li>
+              <li><a href="#">BLOG</a></li>
             </ul>
           </div>
-          <div class="col-md-9 col-6 mt-3">
+          <div class="col-md-3 col-6 mt-3">
+            <ul class="subheading fw-light list-unstyled fs-5">
+              <h4 class="subheading fw-bold mb-3">POPULAR</h4>
+              <li><a href="#">GRAPHIC TEES</a></li>
+              <li><a href="#">JACKETS</a></li>
+              <li><a href="#">HOODIES</a></li>
+              <li><a href="#">CARGOS</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6 mt-3">
+            <ul class="subheading fw-light list-unstyled fs-5">
+              <h4 class="subheading fw-bold mb-3">ABOUT US</h4>
+              <li><a href="#">OUR STORY</a></li>
+              <li><a href="#">SERVICES</a></li>
+              <li><a href="#">RETURNS & EXCHANGE</a></li>
+              <li><a href="#">GIFT CARDS</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6 mt-3">
+            <ul class="subheading fw-light list-unstyled fs-5">
+              <h4 class="subheading fw-bold mb-3">CONTACT US</h4>
+              <li><a href="#">CUSTOMER CARE</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+              <li><a href="#">COOKIE POLICY</a></li>
+              <li><a href="#">PRICING</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-6 mt-3">
+            <p class="subdescription m-0">@ 2024 ethnos All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 mt-3 text-end">
             <img
-              src="assets/img/template-images/template-footer-logo.png"
+              src="assets/img/template-images/facebook.svg"
               alt=""
-              class="img-fluid"
+              class="img-fluid me-2"
+            />
+            <img
+              src="assets/img/template-images/instagram.svg"
+              alt=""
+              class="img-fluid me-2"
+            />
+            <img
+              src="assets/img/template-images/twitter.svg"
+              alt=""
+              class="img-fluid me-2"
             />
           </div>
         </div>

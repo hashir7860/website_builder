@@ -39,6 +39,22 @@ body {
     min-height: 500px;
 }
 
+.shop-hero {
+    background: url(/assets/img/template-images/template-shop-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.addtocart-hero {
+    background: url(/assets/img/template-images/addtocart-hero-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
 .contact-hero {
     background: url(/assets/img/template-images/template-contact.png);
     background-repeat: no-repeat;
@@ -427,6 +443,10 @@ Ecommerce Template
     .poppin-description {
         font-size: 14px;
     }
+
+    .shop-hero{
+        min-height: 325px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -456,6 +476,11 @@ Ecommerce Template
 
     .poppin-heading {
         font-size: 30px;
+    }
+
+    .shop-hero{
+        min-height: 255px;
+        margin: 0 10px  ;
     }
 }
 
